@@ -1,0 +1,15 @@
+.claude/settings.local.json
+__pycache__/
+*.pyc
+.env
+.env*
+*.token
+tokens/
+node_modules/
+*.jar
+*.mrpack
+saves/
+logs/
+crash-reports/
+options.txt
+shaderpacks/
