@@ -38,6 +38,7 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 | `create-jetpack` | 4.4.6 | Jetpack and brass backpack. |
 | `create-ore-excavation` | 1.6.6 | Drills for ore veins. Different from Sarah's Ore Excavation. |
 | `create-confectionery` | 1.1.3 | Sweets and baking. Cozy. |
+| `create-tfmg` | 1.0.2f | The Factory Must Grow: steel, oil, diesel engines. Moved from Tier 2 (Ben, 2026-11-03); the tech depth. |
 | `create-tweaked-controllers` | 1.2.7 | Gamepad control for contraptions. Optional. |
 | `bellsandwhistles` | 0.4.5 | Create visual add-ons. Optional. |
 | `create-ultimine` | 1.3.1 | Ultimine for Create tools. Optional. |
@@ -101,14 +102,9 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `immediatelyfast` | 1.5.5 | Tagged 1.20.4 on Modrinth but returned for 1.20.1 Forge. **Check.** |
 | `dynamic-fps` | 3.11.4 | Optional for the laptop. |
 
-### Quests
-FTB Quests is not on Modrinth (**Check** CurseForge via `packwiz curseforge add`). Plan: one Create questline (gears and
-belts first, then trains, power, optional tier 2), one cozy/animal questline, both optional.
-
 ## Tier 2: optional depth (heavier; PC first)
 | Slug | Found | Notes |
 |---|---|---|
-| `create-tfmg` | 1.0.2f | The Factory Must Grow: Create-style oil/steel/industry progression. Closest to the GTNH feel. |
 | `create-diesel-generators` | 1.3.12 | Fuel power. |
 | `create-encased` | 1.8-ht2 | More encased machinery. |
 | `create-bits-n-bobs` | 0.0.41 | Extra building/utility blocks. |
@@ -124,4 +120,4 @@ U Team Core, Cloth Config, Oculus/Rubidium (replaced above).
 
 ## Dropped
 GregTech-based packs (linear), Cobblemon and Pixelmon (one creature mod only), `create-oxidized` (tiny), Create Slice & Dice
-(no project found).
+(no project found), FTB Quests and any quest mod (Ben, 2026-11-03: no quests).

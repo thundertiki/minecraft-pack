@@ -2,7 +2,8 @@
 
 Target: Minecraft 1.20.1 on Forge, focused on Create (tech) and Alex's Mobs (creatures); one creature mod only, so no
 Cobblemon. See `docs/design.md`. Must run on Ben's work laptop (8 GB RAM total, so about 4 to 5 GB for the game) and
-his PC. Sarah plays too. Non-linear: no forced tech progression; quests are optional.
+his PC. Sarah plays too. Non-linear: normal Create progression, no quests, no
+recipe locks.
 
 ## Rules
 - The pack is a packwiz repo: mods are `.pw.toml` files, never jars. Add with `packwiz modrinth add <slug>`, or

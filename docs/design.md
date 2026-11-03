@@ -3,7 +3,7 @@
 ## Goals
 - A pack for Ben and Sarah (maybe others later) that mixes tech progression (Ben liked GregTech New Horizons) with a
   cozy base (Sarah's earlier pack: farming, food, Botania, exploration, pets).
-- Non-linear. Quests are optional: a Create questline for Ben, a small cozy/animal questline Sarah can ignore.
+- Non-linear, normal Create progression: no quests and no recipe locks (Ben, 2026-11-03).
 - Runs on the work laptop (8 GB total RAM) and the PC. Shaders (Eclipse) optional.
 
 ## Decisions
@@ -11,8 +11,8 @@
 - **Minecraft 1.20.1, Forge.** Official Alex's Mobs (1.22.9) and the largest Create add-on pool live here, and most of
   Sarah's old list still exists. Shaders: Embeddium + Oculus 1.8.0 (Eclipse needs Iris or Oculus 1.6.11 or newer).
   Trade-off: no 1.21 vanilla content (trial chambers, mace, Crafter); unofficial backports exist.
-- **Create as the tech base, not GregTech.** Lighter on RAM, visual, non-linear. For GTNH-style depth, Tier 2 adds
-  `create-tfmg` (The Factory Must Grow: oil, steel, industry) plus optional AE2/Mekanism.
+- **Create as the tech base, not GregTech.** Lighter on RAM, visual, non-linear. For GTNH-style depth, `create-tfmg` (The
+  Factory Must Grow: steel, oil, engines) is in Tier 1 (Ben, 2026-11-03); AE2 stays optional Tier 2.
 - **Custom pack instead of ATM10 / Enigmatica 10 / StoneBlock 4.** ATM10 lists 8 GB RAM minimum; none fits the
   laptop or this Create + cozy mix. Create-first packs to study for pacing: Create: Above and Beyond, Create: Astral.
 - **packwiz + Prism.** One Git repo is the source of truth; each Prism instance runs the packwiz installer bootstrap as
@@ -42,11 +42,9 @@ Embeddium.
 - Danger is fine (Ben, 2026-11-03): keep Alex's Mobs hostiles at default. If the animals feel too many, trim spawns
   in the Alex's Mobs config. Naturalist is optional.
 
-## Quests
-- FTB Quests is not on Modrinth (the FTB mods are on CurseForge). Options: `packwiz curseforge add` (if CurseForge allows
-  third-party download), or an all-Modrinth alternative. Opus to decide.
-- Planned shape: a Create questline (shafts and belts, then trains, power, Tier 2), and a cozy/animal questline (farming,
-  cooking, taming), both optional and not gating each other.
+## Progression
+- Normal Create recipes, no quests, no KubeJS recipe locks. TFMG gates itself by materials: steel needs a coke
+  oven and blast furnace, and its oil and engine machines need steel.
 
 ## World
 - Terralith + Tectonic as the baseline, with Regions Unexplored or Biomes O' Plenty added only if the biome mix
@@ -54,9 +52,7 @@ Embeddium.
 - YUNG's structure mods, Lootr, and Better Village (Sarah's pick) or the CT Overhauled Village alternative.
 
 ## Open questions
-1. Quest mod: FTB Quests from CurseForge, or an all-Modrinth route?
-2. Botania (heavy) and Create Ore Excavation vs Ore Excavation: keep both, one or neither on the laptop?
-3. Tier 2: include The Factory Must Grow and AE2 from the start, or only after the base pack runs well on the laptop?
-4. Pam's HarvestCraft 2: only the core and extended mods exist on 1.20.1 Forge; balance against Farmer's Delight and
+1. Botania (heavy) and Create Ore Excavation vs Ore Excavation: keep both, one or neither on the laptop?
+2. Pam's HarvestCraft 2: only the core and extended mods exist on 1.20.1 Forge; balance against Farmer's Delight and
    Create Central Kitchen, or skip?
-5. Which of Sarah's unchecked mods (see `modlist.md`) are worth keeping?
+3. Which of Sarah's unchecked mods (see `modlist.md`) are worth keeping?

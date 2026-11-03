@@ -10,3 +10,5 @@
   Sodium 0.8.13, Iris 1.8.14-beta.1. Revisit if Ben wants Cobblemon later.
 - **Alex's Mobs and Cobblemon together:** too many creatures and an old crash report (Cobblemon 1.5 with Alex's Mobs);
   Ben chose one.
+- **Quests and Above-and-Beyond-style tiers (dropped 2026-11-03):** Ben chose normal Create progression with no quests;
+  TFMG's steel and oil chains give the depth instead of KubeJS-locked machine tiers.
