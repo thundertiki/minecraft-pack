@@ -7,12 +7,17 @@
 - Runs on the work laptop (8 GB total RAM) and the PC. Shaders (Eclipse) optional.
 
 ## Decisions
-- **Minecraft 1.21.1, NeoForge.** Cobblemon, Create 6, Farmer's Delight, Terralith, Tectonic, Sodium and Iris all have
-  1.21.1 NeoForge builds (verified against the Modrinth API on 2026-11-02, see `modlist.md`). 1.20.1 Forge would have the
-  largest mod pool and Sarah's old list, but Cobblemon, Iris and Create are best supported on 1.21.1 and the 1.21.1
-  vanilla additions (trial chambers, mace, Crafter) come for free.
-- **Cobblemon, not Pixelmon.** Cobblemon is free and open source, runs on Fabric or NeoForge, and is lighter. Pixelmon
-  is closed source, NeoForge only, heavier, and brings its own gym/league structure that we do not want.
+- **One creature mod, not both (Ben, 2026-11-03):** Cobblemon or Alex's Mobs. That decides the version, so two lines
+  are proposed in `modlist.md`; **Opus picks one**:
+  - **Line A: 1.21.1 NeoForge + Cobblemon.** Current Cobblemon (1.8.4, with riding) only exists here. No official
+    Alex's Mobs on this version. Shoulder pets come from Perch, Adorable Hamster Pets and the Animal Garden mods.
+    Gains the 1.21 vanilla additions (trial chambers, mace, Crafter).
+  - **Line B: 1.20.1 Forge + Alex's Mobs.** Official Alex's Mobs (monkey on the shoulder) and Naturalist. Keeps most of
+    Sarah's old list (Botania, Dragon Mounts Legacy, Ore Excavation, Steam 'n Rails). Cobblemon here is stuck at 1.5.2
+    (no riding, no Mega Showdown), so it is not in this line.
+  - My lean: Line A if Cobblemon is the hook, Line B if Sarah's old mods and the monkey matter more.
+- **Cobblemon, not Pixelmon (Line A).** Cobblemon is free and open source, runs on Fabric or NeoForge, and is lighter.
+  Pixelmon is closed source, NeoForge only, heavier, and brings its own gym/league structure that we do not want.
 - **Create as the tech base, not GregTech.** Lighter on RAM, visual, non-linear. AE2 and Mekanism are optional tier 2.
 - **Custom pack instead of ATM10 / Enigmatica 10 / StoneBlock 4.** ATM10 lists 8 GB RAM minimum; none fits the
   laptop and none has the Cobblemon + cozy mix.
@@ -29,19 +34,18 @@
 | Optional heavy mods | off | Tier 2 on |
 Same pack for both; only Prism instance settings differ. If a mod is too heavy for the laptop, drop it from the pack.
 
-## Creatures: Cobblemon + Alex's Mobs
-- Cobblemon has its own species and spawns. Alex's Mobs adds about 89 animals. Together they can crowd biomes with
-  creatures and make Cobblemon spawns feel diluted. **Plan:** keep Alex's Mobs, but use its config to disable most
-  spawns and keep only the animals Sarah wants (capuchin monkey, a few birds). Reduce the rest to rare or off.
-  Confirm in play, then tune.
-- **Shoulder pets:** the Alex's Mobs capuchin monkey sits on the owner's shoulder after a shift-right-click, and it can
-  be removed by crouching (wiki, [Capuchin Monkey](https://alexs-mobs-unofficial.fandom.com/wiki/Capuchin_Monkey)).
-  Perch (parrots on the shoulder, 1.21.1 NeoForge `2.1.0`) covers birds.
-- **Cobblemon creatures do not sit on your shoulder** as far as the research found. Cobblemon 1.7+ has built-in riding
-  (inferred from the Modrinth page of the old side mod "Cobblemon: Ride On!", which says it does not work on
-  Cobblemon 1.7 or later and should be removed). Check in play whether riding covers what Sarah wants.
-- **Compatibility risk:** Alex's Mobs on 1.21.1 NeoForge is a community port, not the official mod (see `modlist.md`).
-  An old 2024 report shows Alex's Mobs in a crash log with Cobblemon 1.5; not confirmed for current versions. Test early.
+## Creatures
+- **Why not both:** Cobblemon has its own species and spawns, and Alex's Mobs adds about 89 animals; together they
+  crowd biomes and dilute Cobblemon spawns. An old 2024 report also shows Alex's Mobs in a crash log with Cobblemon 1.5
+  (not confirmed for current versions). Ben chose one.
+- **Line A (Cobblemon):** shoulder pets for Sarah come from `perch` (parrots), `adorable-hamster-pets`,
+  `animal-garden-owl` and `animal-garden-olive-baboon` (a monkey-like animal; **Check** whether it sits on the shoulder).
+  Cobblemon creatures themselves do not sit on your shoulder as far as the research found. Cobblemon 1.7+ has built-in
+  riding (inferred from the Modrinth page of the old side mod "Cobblemon: Ride On!", which says it does not work on
+  Cobblemon 1.7 or later). Check in play whether riding covers what Sarah wants.
+- **Line B (Alex's Mobs):** the capuchin monkey sits on the owner's shoulder after a shift-right-click and is removed by
+  crouching (wiki, [Capuchin Monkey](https://alexs-mobs-unofficial.fandom.com/wiki/Capuchin_Monkey)). Tame it with
+  bananas. If the 89 animals feel too many, trim spawns in the Alex's Mobs config.
 
 ## Quests
 - FTB Quests is not on Modrinth (the FTB mods are on CurseForge). Options: add it with `packwiz curseforge add`, or use
@@ -55,9 +59,9 @@ Same pack for both; only Prism instance settings differ. If a mod is too heavy f
 - YUNG's structure mods, Lootr, and Overhauled Villages (replaces Better Village, which was not found).
 
 ## Open questions
-1. Is Alex's Mobs (community port) stable enough with Cobblemon, or do we use another source of shoulder pets?
-2. Quest mod: FTB Quests from CurseForge, or an all-Modrinth route?
-3. Botania is not available on Modrinth for 1.21.1 NeoForge. Is it on CurseForge, and does it fit the RAM budget?
+1. **Which line, A or B?** (Cobblemon on 1.21.1 vs Alex's Mobs on 1.20.1.)
+2. Quest mod: FTB Quests from CurseForge, or an all-Modrinth route? (Line B has none chosen on Modrinth.)
+3. Botania is only on Modrinth for 1.20.1 (Line B). For Line A, is it on CurseForge, and does it fit the RAM budget?
 4. Tier 2 (AE2, Mekanism): include from the start or wait until the base pack runs well on the laptop?
 5. Pam's HarvestCraft 2 on 1.21.1 has small download counts (about 70K to 280K). Is it maintained and balanced against
    Farmer's Delight, or do we skip it?

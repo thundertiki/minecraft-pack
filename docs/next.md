@@ -1,8 +1,8 @@
 # Next (one block per task in flight)
 
 ## Opus review of the proposed modlist
-Read `docs/design.md` and `docs/modlist.md`. Verify the "Check" items, decide the Tier 2 question and the
-Cobblemon + Alex's Mobs spawn plan, then say what to cut for the 8 GB laptop.
+Read `docs/design.md` and `docs/modlist.md`. Pick Line A (1.21.1 NeoForge + Cobblemon) or Line B (1.20.1 Forge +
+Alex's Mobs), verify the "Check" items, decide the Tier 2 question, then say what to cut for the 8 GB laptop.
 
 ## Create the packwiz pack
 Install packwiz (`go install github.com/packwiz/packwiz@latest`; Go is on the laptop), then
