@@ -39,7 +39,8 @@ Embeddium.
   with bananas.
 - Other shoulder pets: Pet Shop (parrot on "Stay"), Adorable Hamster Pets, Animal Garden Owl. `perch` has no 1.20.1
   Forge build.
-- If the animals feel too many or too aggressive, trim spawns in the Alex's Mobs config. Naturalist is optional.
+- Danger is fine (Ben, 2026-11-03): keep Alex's Mobs hostiles at default. If the animals feel too many, trim spawns
+  in the Alex's Mobs config. Naturalist is optional.
 
 ## Quests
 - FTB Quests is not on Modrinth (the FTB mods are on CurseForge). Options: `packwiz curseforge add` (if CurseForge allows
