@@ -20,6 +20,9 @@
 - Target about 100 mods including libraries. Create add-ons are the biggest RAM risk: keep Tier 1 to about 16 Create mods.
 
 ## Laptop vs PC
+The server runs on the PC (Ben, 2026-11-03). The laptop is only a client, used by Ben or Sarah; Sarah will later play
+on her own PC.
+
 | | Laptop (8 GB total) | PC |
 |---|---|---|
 | Game RAM | 4 to 5 GB | 8 GB or more |
