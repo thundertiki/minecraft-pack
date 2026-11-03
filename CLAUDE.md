@@ -1,7 +1,7 @@
 # minecraft-pack: Ben and Sarah's modpack (Cobblemon + Create + cozy base, built with packwiz, played in Prism)
 
-Target: undecided between Line A (1.21.1 NeoForge + Cobblemon) and Line B (1.20.1 Forge + Alex's Mobs); one creature mod
-only, never both. See `docs/design.md`. Must run on Ben's work laptop (8 GB RAM total, so about 4 to 5 GB for the game) and
+Target: Minecraft 1.20.1 on Forge, focused on Create (tech) and Alex's Mobs (creatures); one creature mod only, so no
+Cobblemon. See `docs/design.md`. Must run on Ben's work laptop (8 GB RAM total, so about 4 to 5 GB for the game) and
 his PC. Sarah plays too. Non-linear: no forced tech progression; quests are optional.
 
 ## Rules
