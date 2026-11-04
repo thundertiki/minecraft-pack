@@ -26,7 +26,7 @@ on her own PC.
 
 | | Laptop (8 GB total) | PC |
 |---|---|---|
-| Game RAM | 4 to 5 GB | 8 GB or more |
+| Game RAM | 4 to 5 GB | 5 GB (PC has 16 GB and also hosts the server, HA VM, Jellyfin) |
 | Render distance | 8 to 10 | 12 to 16 |
 | Shaders | off; if wanted, MakeUp Ultra Fast | Complementary Reimagined (or Eclipse) |
 | Optional heavy mods | off | Tier 2 on |
