@@ -1,6 +1,6 @@
 name = "Searchables"
 filename = "Searchables-forge-1.20.1-1.0.3.jar"
-side = "client"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/fuuu3xnx/versions/PM9yAW1G/Searchables-forge-1.20.1-1.0.3.jar"

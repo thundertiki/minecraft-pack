@@ -99,7 +99,7 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `explorers-compass` | 1.4.0 | Finds structures. Added 2026-11-03. |
 | `inventory-profiles-next` | 1.10.20 | Inventory sorting; pulls in Kotlin for Forge and libIPN. Added 2026-11-03. |
 | `ore-excavation` | 1.13.170 | Sarah's old pick; vein mining. Keep alongside `create-ore-excavation`. |
-| `controlling` | 12.0.2 | Search box in the controls menu. Client only; needs `searchables` 1.0.3 (client). Added 2026-11-04. |
+| `controlling` | 12.0.2 | Search box in the controls menu. Client only; needs `searchables` 1.0.3. Added 2026-11-04. Searchables is side `both` since 2026-11-03: it registers a network channel, so a client-only copy blocks joining ("incompatible FML"). |
 | `spark` | 1.10.53 | Lag profiler for the server (`/spark profiler`). Idle unless used. Added 2026-11-04. |
 
 ### Performance and shaders

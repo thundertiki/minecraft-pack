@@ -322,7 +322,7 @@ metafile = true
 
 [[files]]
 file = "mods/searchables.pw.toml"
-hash = "b8c7497acbf4890b4609b6b20de7affdd3482fc99af975d9ff6b29c075e1d8a7"
+hash = "8a72c34f31d93ad7b952a2bcc3f3714c29ddf4d8b34b484135cddd66fdb83f3f"
 metafile = true
 
 [[files]]
