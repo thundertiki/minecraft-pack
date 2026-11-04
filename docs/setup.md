@@ -14,6 +14,8 @@ before expecting an update. Bootstrap used: packwiz-installer-bootstrap v0.0.3.
    `minecraft` folder. The laptop instance `BenAndSarah-1.20.1` was set up this way on 2026-11-03 (4.5 GB max).
 3. Edit instance > Settings > Custom commands > Pre-launch command:
    `"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/thundertiki/minecraft-pack/main/pack.toml`
+   Type it in Prism's settings field. If editing `instance.cfg` by hand, escape the inner quotes
+   (`PreLaunchCommand="\"$INST_JAVA\" -jar ..."`) or Prism drops them and the Java path with spaces breaks.
 4. Launch. It installs or updates the mods every start.
 
 ## PC server
