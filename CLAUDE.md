@@ -2,7 +2,8 @@
 
 Target: Minecraft 1.20.1 on Forge, focused on Create (tech) and Alex's Mobs (creatures); one creature mod only, so no
 Cobblemon. See `docs/design.md`. Must run on Ben's work laptop (8 GB RAM total, so about 4 to 5 GB for the game) and
-his PC (which hosts the server). Sarah plays too. Non-linear: normal Create progression, no quests, no
+his PC (which hosts the server). Sarah plays too; Botania and Pam's HarvestCraft 2 are
+her non-negotiables. Non-linear: normal Create progression, no quests, no
 recipe locks.
 
 ## Rules

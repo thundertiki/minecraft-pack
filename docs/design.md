@@ -61,7 +61,7 @@ Embeddium.
 
 ## Settled in the 2026-11-03 review
 - Keep both ore mods: Create Ore Excavation (vein drills) and Ore Excavation (vein mining) do different jobs.
-- Botania stays (Sarah's pick) unless the laptop struggles.
-- Skip Pam's HarvestCraft 2; Farmer's Delight, Central Kitchen and Confectionery cover food.
+- Botania and Pam's HarvestCraft 2 are Sarah's non-negotiables (2026-11-03). Pam's crops and trees come from
+  CurseForge; food core and extended from Modrinth. Pam's sits alongside Farmer's Delight and Central Kitchen.
 - Sarah's unchecked mods: see Dropped in `modlist.md`.
 - Sarah has not seen the list yet; she knows it is tech plus cozy.

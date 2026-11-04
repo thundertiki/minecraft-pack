@@ -50,7 +50,11 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `curios` | 5.14.1 | |
 | `waystones` | 14.1.21 | |
 | `lootr` | 0.7.35 | |
-| `botania` | 456 | Sarah's pick; heavy magic mod. Keep unless the laptop struggles. |
+| `botania` | 456 | Sarah's pick, non-negotiable (2026-11-03). Nature magic. |
+| `pams-harvestcraft-2-food-core` | 1.0.5 | Sarah's pick, non-negotiable (2026-11-03). Hundreds of foods (sandwiches and more). Modrinth. |
+| `pams-harvestcraft-2-food-extended` | 1.0.1 | More Pam's foods. Modrinth. |
+| `pams-harvestcraft-2-crops` | 1.0.3 | Pam's garden crops. CurseForge only (no 1.20.1 build on Modrinth). |
+| `pams-harvestcraft-2-trees` | 1.0.2 | Pam's fruit and nut trees. CurseForge only. |
 | `simple-backups` | 3.1.24 | Automatic world backups (Create contraptions and a beta dragon mod can corrupt a world). |
 
 ### World and structures
@@ -112,8 +116,7 @@ GregTech-based packs (linear), Cobblemon and Pixelmon (one creature mod only), `
 (no project found), FTB Quests and any quest mod (Ben, 2026-11-03: no quests).
 
 Dropped in the 2026-11-03 review: `immediatelyfast` (only 1.21.x builds, wrongly tagged), `create-design-n-decor` (last
-1.20.1 build 0.4.0b from 2024, before Create 6), `create-ultimine` (overlaps Ore Excavation), Pam's HarvestCraft 2
-(crops and trees mods missing on 1.20.1 Forge; Farmer's Delight covers food), `mekanism` (heavy, a second tech chain),
+1.20.1 build 0.4.0b from 2024, before Create 6), `create-ultimine` (overlaps Ore Excavation), `mekanism` (heavy, a second tech chain),
 Goblin Traders and Curious Elytra (no Modrinth project), ExpandAbility (no 1.20.1 build), Valhelsia Tweaks, Useful
 Backpacks (Sophisticated Backpacks instead), Essential (not needed with Prism),
 Adorable Hamster Pets, Animal Garden Owl and Pet Shop (Ben, 2026-11-03: not needed).
