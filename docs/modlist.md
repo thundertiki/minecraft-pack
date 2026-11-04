@@ -34,8 +34,12 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 | `create-tfmg` | 1.0.2f | The Factory Must Grow: steel, oil, diesel engines. Moved from Tier 2 (Ben, 2026-11-03); the tech depth. |
 | `create-tweaked-controllers` | 1.2.7 | Gamepad control for contraptions. Optional. |
 | `bellsandwhistles` | 0.4.5 | Create visual add-ons. Optional. |
-Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddition` (above); `create-slice-and-dice`,
-`create-hypertube`, `create-interactive` returned no project.
+| `create-repair` | 1.3.0 | Unofficial Create 1.20.1 patch: backported bug and dupe fixes; restores Create's train map in JourneyMap 6 (JourneyMap asks for it). Added 2026-11-04. |
+| `mixinbooster` | 0.1.3+1.20.1 | Lets Create Repair apply its Fabric-mixin fixes on Forge (recommended by Create Repair). Added 2026-11-04. |
+| `copycats` | 3.0.10 | Copycats+: copycat blocks in every shape. Added 2026-11-04. |
+| `slice-and-dice` | 3.6.0 | Create automation for Farmer's Delight cutting and cooking. Added 2026-11-04. |
+Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddition` (above); `create-hypertube`,
+`create-interactive` returned no project. (Slice & Dice is `slice-and-dice`, not `create-slice-and-dice`.)
 
 ### Cozy base and food (Sarah's old list)
 | Slug | Found | Notes |
@@ -69,6 +73,11 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `yungs-better-mineshafts` | 4.0.4 | |
 | `yungs-better-strongholds` | 4.0.3 | |
 | `yungs-better-ocean-monuments` | 3.0.4 | |
+| `yungs-better-nether-fortresses` | 2.0.6 | Added 2026-11-04 with the next four. Side `both` like the other YUNG's (singleplayer worlds need them). |
+| `yungs-better-end-island` | 2.0.6 | |
+| `yungs-better-jungle-temples` | 2.0.5 | |
+| `yungs-better-witch-huts` | 3.0.3 | |
+| `yungs-better-desert-temples` | 3.0.3 | |
 | `better-village` | 3.3.1 | Sarah's old pick. `ct-overhaul-village` 3.4.14 is the alternative. |
 | `valhelsia-structures` | 1.1.2 | Sarah's old pick; extra structures. |
 | `valhelsia-furniture` | 1.1.3 | Furnishes Valhelsia Structures (it warns without it) and adds craftable furniture. Needs Valhelsia Core 1.1.1+. Added 2026-11-04, before the world was made. |
@@ -89,6 +98,8 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `explorers-compass` | 1.4.0 | Finds structures. Added 2026-11-03. |
 | `inventory-profiles-next` | 1.10.20 | Inventory sorting; pulls in Kotlin for Forge and libIPN. Added 2026-11-03. |
 | `ore-excavation` | 1.13.170 | Sarah's old pick; vein mining. Keep alongside `create-ore-excavation`. |
+| `controlling` | 12.0.2 | Search box in the controls menu. Client only; needs `searchables` 1.0.3 (client). Added 2026-11-04. |
+| `spark` | 1.10.53 | Lag profiler for the server (`/spark profiler`). Idle unless used. Added 2026-11-04. |
 
 ### Performance and shaders
 | Slug | Found | Notes |
@@ -118,8 +129,7 @@ After adding a mod, start the server once and check the log for `Missing or unsu
 | `ae2` | 15.4.12 | Applied Energistics 2 storage/autocrafting. |
 
 ## Dropped
-GregTech-based packs (linear), Cobblemon and Pixelmon (one creature mod only), `create-oxidized` (tiny), Create Slice & Dice
-(no project found), FTB Quests and any quest mod (Ben, 2026-11-03: no quests).
+GregTech-based packs (linear), Cobblemon and Pixelmon (one creature mod only), `create-oxidized` (tiny), FTB Quests and any quest mod (Ben, 2026-11-03: no quests).
 
 Dropped in the 2026-11-03 review: `immediatelyfast` (only 1.21.x builds, wrongly tagged), `create-design-n-decor` (last
 1.20.1 build 0.4.0b from 2024, before Create 6), `create-ultimine` (overlaps Ore Excavation), `mekanism` (heavy, a second tech chain),
