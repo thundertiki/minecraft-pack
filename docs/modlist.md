@@ -104,6 +104,11 @@ Libraries packwiz added (not listed above): Balm, Citadel, Common Networking, Cr
 Enchantment Industry), GeckoLib, Kotlin for Forge, libIPN, Library Ferret, Mezz Config, Patchouli, SmartBrainLib,
 Sophisticated Core, Valhelsia Core, YUNG's API.
 
+Libraries added by hand on 2026-11-03 (packwiz missed them: the mods declare them only in their jars, not on Modrinth;
+the PC server's Forge log listed them): Architectury API 9.2.14 and Cloth Config 11.1.136 (Artifacts), Lithostitched
+1.4.11 (Tectonic). Side set to `both` (Modrinth marks Lithostitched server-only, but Tectonic needs it on clients).
+After adding a mod, start the server once and check the log for `Missing or unsupported mandatory dependencies`.
+
 ## Tier 2: optional depth (heavier; PC first)
 | Slug | Found | Notes |
 |---|---|---|
