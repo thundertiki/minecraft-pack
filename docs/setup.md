@@ -40,8 +40,18 @@ GitHub caches `main` for a few minutes after a push. To test a commit at once, p
    ```
 5. Run `start.bat` once; it stops at the EULA. Set `eula=true` in `eula.txt`, run it again. Allow Java on private
    networks when Windows asks.
-6. Join from clients at the PC's LAN IP or its Tailscale name (port 25565).
+6. Join from clients at the PC's LAN IP or its Tailscale name (port 25565). Ben's PC: LAN `10.10.1.135`, Tailscale
+   `100.112.253.99` or `desktop`.
 7. Pre-generate with Chunky once in the server console: `chunky radius 3000`, then `chunky start`.
+
+## Server settings (only in `C:\MinecraftServer`, not in the pack)
+- Ops: Ben is `Thunder_Tiki` (not `thundertiki`, a different account), Sarah is `s0ulta`. Op from the server
+  window: `op <name>`.
+- `server.properties`: `allow-flight=true` (jetpacks and dragons).
+- `config/simplebackups-common.toml`: `timer = 30`, `backupsToKeep = 40`. Backups go to `simplebackups/`.
+
+## Troubleshooting
+- Red flashes in menus and black flashes in game: the Sunshine/Apollo virtual display. Close it while playing.
 
 ## Shaders
 Never in the pack. Download the zip (PC: Photon v1.4 from modrinth.com/shader/photon-shader; Modrinth lists

@@ -22,4 +22,6 @@ description: Add Modrinth mods to the minecraft-pack packwiz pack on a computer 
    in the scratchpad with the URL `.../minecraft-pack/<sha>/pack.toml` and `run.bat`'s java line in place of
    `call run.bat`. Start it with stdin redirected, wait for `Done (`, then write `stop` to stdin so the world saves.
    Fail on `Missing or unsupported mandatory dependencies` or a crash report. Never force-kill a running world.
+   If the live server is running (port 25565 and `world` in use), skip the test copy: ask Ben to type `stop` and
+   rerun `start.bat`, then check `C:\MinecraftServer\logs\latest.log` for `Done (`.
 7. Report the commit, the mods and their versions, and that the client picks them up on its next launch.
