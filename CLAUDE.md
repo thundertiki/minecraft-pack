@@ -15,6 +15,7 @@ recipe locks.
 - Shaders (Eclipse, via Oculus 1.6.11 or newer) are optional and off by default on the laptop. Never put the shader
   zip in the pack; each machine installs it.
 - Sarah's mods that do not exist on 1.20.1 Forge get a replacement or are dropped: say so in `docs/modlist.md`.
+- Every pack change updates `docs/modlist.md` (and `docs/design.md` if a decision changes) in the same commit.
 - Never commit jars, saves, `options.txt` or keys. Notes and plans go in the vault, not here.
 
 ## Where things are

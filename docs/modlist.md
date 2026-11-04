@@ -14,7 +14,7 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 | Slug | Found | Notes |
 |---|---|---|
 | `alexs-mobs` | 1.22.9 | Core creature mod. About 89 animals; capuchin monkey rides on the shoulder (shift-right-click; crouch to remove). Needs Citadel. If too many animals, trim spawns in its config. |
-| `naturalist` | 2.0.9 | Gentle wildlife (bears, deer, butterflies). Optional, off by default: Alex's Mobs already adds many creatures. |
+| `naturalist` | 2.0.9 | Gentle wildlife (bears, deer, butterflies). Not in the pack (Alex's Mobs already adds many creatures). |
 | `dragon-mounts-legacy` | 1.2.3-beta | Sarah's old mod; beta. |
 | `waystones-teleport-pets` | 1.2 | Pets follow Waystones teleports. |
 
@@ -44,7 +44,7 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 |---|---|---|
 | `farmers-delight` | 1.3.4 | Cooking/farming backbone. |
 | `cooking-for-blockheads` | 16.0.15 | |
-| `farming-for-blockheads` | 14.0.4 | |
+| `farming-for-blockheads` | 14.0.4 | Market, shipping bin, sprinklers. Kept (Ben, 2026-11-03). |
 | `gravestone-mod` | 1.0.35 | |
 | `sophisticated-backpacks` | 3.26.19 | |
 | `small-ships` | 2.0.2 | |
@@ -60,7 +60,7 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 |---|---|---|
 | `terralith` | 2.5.4 | Terrain/biome overhaul. |
 | `tectonic` | 3.0.17 | Terrain shaping, Terralith-compatible. |
-| `regions-unexplored` or `biomes-o-plenty` | 0.5.6 / 19.0.0.96 | One of the two, only if more biomes are wanted. |
+| `regions-unexplored` or `biomes-o-plenty` | 0.5.6 / 19.0.0.96 | Not in the pack; add one only if more biomes are wanted. |
 | `yungs-api` | 4.0.6 | Library for the YUNG's mods. |
 | `yungs-better-caves` | 2.0.7 | |
 | `yungs-better-dungeons` | 4.0.4 | |
@@ -82,6 +82,10 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `clumps` | 12.0.0.4 | |
 | `swing-through-grass` | 1.1.0 | |
 | `snow-under-trees` | 1.4.12 | |
+| `polymorph` | 0.49.11 | Choose the result when two mods' recipes clash (food mods, Create). Added 2026-11-03. |
+| `just-enough-resources-jer` | 1.4.0.247 | JEI pages for mob drops and ore heights. Added 2026-11-03. |
+| `explorers-compass` | 1.4.0 | Finds structures. Added 2026-11-03. |
+| `inventory-profiles-next` | 1.10.20 | Inventory sorting; pulls in Kotlin for Forge and libIPN. Added 2026-11-03. |
 | `ore-excavation` | 1.13.170 | Sarah's old pick; vein mining. Keep alongside `create-ore-excavation`. |
 
 ### Performance and shaders
@@ -96,13 +100,16 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `chunky` | 1.3.146 | Pre-generate the world on the PC server (Terralith + Tectonic chunks are slow to generate). Optional. |
 | `dynamic-fps` | 3.11.4 | Optional for the laptop. |
 
+Libraries packwiz added (not listed above): Balm, Citadel, Common Networking, Create Dragons Plus (required by Create
+Enchantment Industry), GeckoLib, Kotlin for Forge, libIPN, Library Ferret, Mezz Config, Patchouli, SmartBrainLib,
+Sophisticated Core, Valhelsia Core, YUNG's API.
+
 ## Tier 2: optional depth (heavier; PC first)
 | Slug | Found | Notes |
 |---|---|---|
 | `create-diesel-generators` | 1.3.12 | Fuel power. |
 | `create-encased` | 1.8-ht2 | More encased machinery. |
 | `create-bits-n-bobs` | 0.0.41 | Extra building/utility blocks. |
-| `create-dragons-plus` | 1.11.9 | Dragon-themed Create content. |
 | `ae2` | 15.4.12 | Applied Energistics 2 storage/autocrafting. |
 
 ## Dropped

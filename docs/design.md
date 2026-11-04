@@ -28,9 +28,17 @@ on her own PC.
 |---|---|---|
 | Game RAM | 4 to 5 GB | 8 GB or more |
 | Render distance | 8 to 10 | 12 to 16 |
-| Shaders | off, or Eclipse on its lowest profile | Eclipse on |
+| Shaders | off; if wanted, MakeUp Ultra Fast | Complementary Reimagined (or Eclipse) |
 | Optional heavy mods | off | Tier 2 on |
 Same pack for both; only Prism instance settings differ. If a mod is too heavy for the laptop, drop it from the pack.
+Laptop hardware: Ryzen 5 7535U with integrated Radeon graphics, which reserves 2 GB of the 8 GB as video memory.
+
+## Shaders (2026-11-03; zips installed per machine, never in the pack)
+- PC: Complementary Reimagined r5.9.3 (vanilla look, good mod support); Complementary Unbound or BSL for a
+  stronger look; Eclipse if Ben still wants it.
+- Laptop: off by default. If wanted, MakeUp Ultra Fast 9.6 on a low preset; Complementary Reimagined on its Potato
+  profile is the fallback.
+- Test moving Create contraptions with the shader on before settling on one.
 Large Create contraptions are the main performance cost; Flywheel (a Create dependency) helps, and so do Entity Culling and
 Embeddium.
 
