@@ -14,7 +14,7 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 | Slug | Found | Notes |
 |---|---|---|
 | `alexs-mobs` | 1.22.9 | Core creature mod. About 89 animals; capuchin monkey rides on the shoulder (shift-right-click; crouch to remove). Needs Citadel. If too many animals, trim spawns in its config. |
-| `naturalist` | 2.0.9 | Gentle wildlife (bears, deer, butterflies). Optional; it adds more creatures. |
+| `naturalist` | 2.0.9 | Gentle wildlife (bears, deer, butterflies). Optional, off by default: Alex's Mobs already adds many creatures. |
 | `adorable-hamster-pets` | 3.7.0 | Hamsters with shoulder launch. |
 | `animal-garden-owl` | 1.1.0 | Owls rest on the shoulder (per the mod page). |
 | `pet-shop` | 0.2.2 | A parrot set to "Stay" moves to your shoulder. |
@@ -31,17 +31,15 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 | `create-new-age` | 1.2.0 | Power generation. |
 | `create-connected` | 1.2.3 | Quality of life blocks (more gearbox, shaft and belt variants). |
 | `create-deco` | 2.0.3 | Decoration blocks (bars, catwalks). |
-| `create-design-n-decor` | 0.4.0b | More decoration blocks. |
 | `create-framed` | 1.7.1 | Glass and framed blocks. |
 | `create-central-kitchen` | 1.5.1 | Create automation for Farmer's Delight; ties the tech and cozy halves together. |
 | `create-enchantment-industry` | 2.5.4b | Automated enchanting and XP. |
 | `create-jetpack` | 4.4.6 | Jetpack and brass backpack. |
-| `create-ore-excavation` | 1.6.6 | Drills for ore veins. Different from Sarah's Ore Excavation. |
+| `create-ore-excavation` | 1.6.6 | Drills for ore veins. Keep alongside `ore-excavation` (different job). |
 | `create-confectionery` | 1.1.3 | Sweets and baking. Cozy. |
 | `create-tfmg` | 1.0.2f | The Factory Must Grow: steel, oil, diesel engines. Moved from Tier 2 (Ben, 2026-11-03); the tech depth. |
 | `create-tweaked-controllers` | 1.2.7 | Gamepad control for contraptions. Optional. |
 | `bellsandwhistles` | 0.4.5 | Create visual add-ons. Optional. |
-| `create-ultimine` | 1.3.1 | Ultimine for Create tools. Optional. |
 Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddition` (above); `create-slice-and-dice`,
 `create-hypertube`, `create-interactive` returned no project.
 
@@ -51,8 +49,6 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `farmers-delight` | 1.3.4 | Cooking/farming backbone. |
 | `cooking-for-blockheads` | 16.0.15 | |
 | `farming-for-blockheads` | 14.0.4 | |
-| `pams-harvestcraft-2-food-core` | 1.0.5 | `-crops` and `-trees` have no 1.20.1 Forge build; the core and extended mods only. |
-| `pams-harvestcraft-2-food-extended` | 1.0.0 | |
 | `gravestone-mod` | 1.0.35 | |
 | `sophisticated-backpacks` | 3.26.19 | |
 | `small-ships` | 2.0.2 | |
@@ -60,7 +56,8 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `curios` | 5.14.1 | |
 | `waystones` | 14.1.21 | |
 | `lootr` | 0.7.35 | |
-| `botania` | 456 | Heavy magic mod; may not suit the laptop. Optional. |
+| `botania` | 456 | Sarah's pick; heavy magic mod. Keep unless the laptop struggles. |
+| `simple-backups` | 3.1.24 | Automatic world backups (Create contraptions and a beta dragon mod can corrupt a world). |
 
 ### World and structures
 | Slug | Found | Notes |
@@ -75,6 +72,7 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `yungs-better-strongholds` | 4.0.3 | |
 | `yungs-better-ocean-monuments` | 3.0.4 | |
 | `better-village` | 3.3.1 | Sarah's old pick. `ct-overhaul-village` 3.4.14 is the alternative. |
+| `valhelsia-structures` | 1.1.2 | Sarah's old pick; extra structures. |
 | `natures-compass` | 1.12.0 | |
 
 ### Quality of life
@@ -88,7 +86,7 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `clumps` | 12.0.0.4 | |
 | `swing-through-grass` | 1.1.0 | |
 | `snow-under-trees` | 1.4.12 | |
-| `ore-excavation` | 1.13.170 | Sarah's old pick; may overlap with `create-ore-excavation`. Choose one. |
+| `ore-excavation` | 1.13.170 | Sarah's old pick; vein mining. Keep alongside `create-ore-excavation`. |
 
 ### Performance and shaders
 | Slug | Found | Notes |
@@ -99,7 +97,7 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `ferrite-core` | 6.0.1 | Memory. |
 | `modernfix` | 5.27.91 | Startup and memory. |
 | `entityculling` | 1.11.3 | Helps with Create contraptions and many animals. |
-| `immediatelyfast` | 1.5.5 | Tagged 1.20.4 on Modrinth but returned for 1.20.1 Forge. **Check.** |
+| `chunky` | 1.3.146 | Pre-generate the world on the PC server (Terralith + Tectonic chunks are slow to generate). Optional. |
 | `dynamic-fps` | 3.11.4 | Optional for the laptop. |
 
 ## Tier 2: optional depth (heavier; PC first)
@@ -110,14 +108,15 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `create-bits-n-bobs` | 0.0.41 | Extra building/utility blocks. |
 | `create-dragons-plus` | 1.11.9 | Dragon-themed Create content. |
 | `ae2` | 15.4.12 | Applied Energistics 2 storage/autocrafting. |
-| `mekanism` | 10.4.16.80 | Heavy tech chain; PC only. |
-
-## Not checked from Sarah's old list, Opus to decide
-Goblin Traders and Curious Elytra (no Modrinth project under those slugs), ExpandAbility (no 1.20.1 build found),
-Valhelsia Structures (1.1.2 exists) and Tweaks, Useful Backpacks (2.0.1 exists; replaced by Sophisticated Backpacks),
-Essential Mod (not needed with Prism), Library Ferret, Caelus API (3.2.0 exists), EnchantmentDescriptions, Bookshelf,
-U Team Core, Cloth Config, Oculus/Rubidium (replaced above).
 
 ## Dropped
 GregTech-based packs (linear), Cobblemon and Pixelmon (one creature mod only), `create-oxidized` (tiny), Create Slice & Dice
 (no project found), FTB Quests and any quest mod (Ben, 2026-11-03: no quests).
+
+Dropped in the 2026-11-03 review: `immediatelyfast` (only 1.21.x builds, wrongly tagged), `create-design-n-decor` (last
+1.20.1 build 0.4.0b from 2024, before Create 6), `create-ultimine` (overlaps Ore Excavation), Pam's HarvestCraft 2
+(crops and trees mods missing on 1.20.1 Forge; Farmer's Delight covers food), `mekanism` (heavy, a second tech chain),
+Goblin Traders and Curious Elytra (no Modrinth project), ExpandAbility (no 1.20.1 build), Valhelsia Tweaks, Useful
+Backpacks (Sophisticated Backpacks instead), Essential (not needed with Prism). Library Ferret, Caelus API,
+EnchantmentDescriptions, Bookshelf, U Team Core and Cloth Config are libraries: packwiz adds them only if a mod needs
+them.

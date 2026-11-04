@@ -12,7 +12,8 @@
   Sarah's old list still exists. Shaders: Embeddium + Oculus 1.8.0 (Eclipse needs Iris or Oculus 1.6.11 or newer).
   Trade-off: no 1.21 vanilla content (trial chambers, mace, Crafter); unofficial backports exist.
 - **Create as the tech base, not GregTech.** Lighter on RAM, visual, non-linear. For GTNH-style depth, `create-tfmg` (The
-  Factory Must Grow: steel, oil, engines) is in Tier 1 (Ben, 2026-11-03); AE2 stays optional Tier 2.
+  Factory Must Grow: steel, oil, engines) is in Tier 1 (Ben, 2026-11-03); AE2 stays optional Tier 2;
+  Mekanism dropped.
 - **Custom pack instead of ATM10 / Enigmatica 10 / StoneBlock 4.** ATM10 lists 8 GB RAM minimum; none fits the
   laptop or this Create + cozy mix. Create-first packs to study for pacing: Create: Above and Beyond, Create: Astral.
 - **packwiz + Prism.** One Git repo is the source of truth; each Prism instance runs the packwiz installer bootstrap as
@@ -51,8 +52,9 @@ Embeddium.
   is not enough (stacking works with TerraBlender generation weights, but biomes get rarer).
 - YUNG's structure mods, Lootr, and Better Village (Sarah's pick) or the CT Overhauled Village alternative.
 
-## Open questions
-1. Botania (heavy) and Create Ore Excavation vs Ore Excavation: keep both, one or neither on the laptop?
-2. Pam's HarvestCraft 2: only the core and extended mods exist on 1.20.1 Forge; balance against Farmer's Delight and
-   Create Central Kitchen, or skip?
-3. Which of Sarah's unchecked mods (see `modlist.md`) are worth keeping?
+## Settled in the 2026-11-03 review
+- Keep both ore mods: Create Ore Excavation (vein drills) and Ore Excavation (vein mining) do different jobs.
+- Botania stays (Sarah's pick) unless the laptop struggles.
+- Skip Pam's HarvestCraft 2; Farmer's Delight, Central Kitchen and Confectionery cover food.
+- Sarah's unchecked mods: see Dropped in `modlist.md`.
+- Sarah has not seen the list yet; she knows it is tech plus cozy.
