@@ -19,10 +19,21 @@ before expecting an update. Bootstrap used: packwiz-installer-bootstrap v0.0.3.
 4. Launch. It installs or updates the mods every start.
 
 ## PC server
-1. Install the Forge 1.20.1 47.4.28 server in its own folder; give it 6 to 8 GB.
-2. Put `packwiz-installer-bootstrap.jar` there and run before each start:
-   `java -jar packwiz-installer-bootstrap.jar -g -s server https://raw.githubusercontent.com/thundertiki/minecraft-pack/main/pack.toml` (skips client-only mods such as Embeddium).
-3. Pre-generate with Chunky once: `chunky radius 3000`, then `chunky start`.
+1. Java 17 on the PC (`java -version`). Make a folder, for example `C:\MinecraftServer`.
+2. Download `https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-47.4.28/forge-1.20.1-47.4.28-installer.jar`
+   into it and run `java -jar forge-1.20.1-47.4.28-installer.jar --installServer`.
+3. Put `packwiz-installer-bootstrap.jar` in the folder. In `user_jvm_args.txt` add `-Xmx8G`.
+4. Create `start.bat`:
+   ```
+   @echo off
+   java -jar packwiz-installer-bootstrap.jar -g -s server https://raw.githubusercontent.com/thundertiki/minecraft-pack/main/pack.toml
+   call run.bat nogui
+   ```
+5. Run `start.bat` once; it stops at the EULA. Set `eula=true` in `eula.txt`, run it again. Allow Java on private
+   networks when Windows asks.
+6. Join from clients at the PC's LAN IP or its Tailscale name (port 25565).
+7. Pre-generate with Chunky once in the server console: `chunky radius 3000`, then `chunky start`.
 
 ## Shaders
-Eclipse is not in the pack. On machines that want it, put the zip in the instance's `shaderpacks` folder.
+Never in the pack. Download the zip (PC: Photon from modrinth.com/shader/photon-shader) into the instance's
+`minecraft/shaderpacks` folder, then in game: Options > Video Settings > Shader Packs.
