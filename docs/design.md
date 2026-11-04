@@ -38,8 +38,7 @@ Embeddium.
 - Alex's Mobs adds about 89 animals. The capuchin monkey sits on the owner's shoulder after a shift-right-click and is
   removed by crouching (wiki, [Capuchin Monkey](https://alexs-mobs-unofficial.fandom.com/wiki/Capuchin_Monkey)). Tame
   with bananas.
-- Other shoulder pets: Pet Shop (parrot on "Stay"), Adorable Hamster Pets, Animal Garden Owl. `perch` has no 1.20.1
-  Forge build.
+- No extra pet mods (Ben, 2026-11-03); the capuchin monkey is the shoulder pet.
 - Danger is fine (Ben, 2026-11-03): keep Alex's Mobs hostiles at default. If the animals feel too many, trim spawns
   in the Alex's Mobs config. Naturalist is optional.
 

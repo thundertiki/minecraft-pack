@@ -1,18 +1,8 @@
 hash-format = "sha256"
 
 [[files]]
-file = "mods/adorable-hamster-pets.pw.toml"
-hash = "4bc9058a24bbf5cad62702ee9ce76e3f5a87159d5adec9483a7c83b13de2f7f7"
-metafile = true
-
-[[files]]
 file = "mods/alexs-mobs.pw.toml"
 hash = "e1016eb125a5a41a10f80847eb00affae0e539e703846f303949ed5d82b7f1bf"
-metafile = true
-
-[[files]]
-file = "mods/animal-garden-owl.pw.toml"
-hash = "baf8adb08013e7f7aeb573b8c7bac15b4cc3c8590d707ba548a4140d76558dd0"
 metafile = true
 
 [[files]]
@@ -253,11 +243,6 @@ metafile = true
 [[files]]
 file = "mods/patchouli.pw.toml"
 hash = "2242b76f7c4ee6d7f396a2d1380bee615d78408d00bff5cca38e4df777b18dc5"
-metafile = true
-
-[[files]]
-file = "mods/pet-shop.pw.toml"
-hash = "741f2664e074ea90fc914c62ea71bc656839cc0ed48af436bd3e545f32b4fab2"
 metafile = true
 
 [[files]]

@@ -15,12 +15,8 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 |---|---|---|
 | `alexs-mobs` | 1.22.9 | Core creature mod. About 89 animals; capuchin monkey rides on the shoulder (shift-right-click; crouch to remove). Needs Citadel. If too many animals, trim spawns in its config. |
 | `naturalist` | 2.0.9 | Gentle wildlife (bears, deer, butterflies). Optional, off by default: Alex's Mobs already adds many creatures. |
-| `adorable-hamster-pets` | 3.7.0 | Hamsters with shoulder launch. |
-| `animal-garden-owl` | 1.1.0 | Owls rest on the shoulder (per the mod page). |
-| `pet-shop` | 0.2.2 | A parrot set to "Stay" moves to your shoulder. |
 | `dragon-mounts-legacy` | 1.2.3-beta | Sarah's old mod; beta. |
 | `waystones-teleport-pets` | 1.2 | Pets follow Waystones teleports. |
-`perch` has no 1.20.1 Forge build (Alex's Mobs and Pet Shop cover parrots).
 
 ### Create core and add-ons
 | Slug | Found | Notes |
@@ -117,6 +113,7 @@ Dropped in the 2026-11-03 review: `immediatelyfast` (only 1.21.x builds, wrongly
 1.20.1 build 0.4.0b from 2024, before Create 6), `create-ultimine` (overlaps Ore Excavation), Pam's HarvestCraft 2
 (crops and trees mods missing on 1.20.1 Forge; Farmer's Delight covers food), `mekanism` (heavy, a second tech chain),
 Goblin Traders and Curious Elytra (no Modrinth project), ExpandAbility (no 1.20.1 build), Valhelsia Tweaks, Useful
-Backpacks (Sophisticated Backpacks instead), Essential (not needed with Prism). Library Ferret, Caelus API,
+Backpacks (Sophisticated Backpacks instead), Essential (not needed with Prism),
+Adorable Hamster Pets, Animal Garden Owl and Pet Shop (Ben, 2026-11-03: not needed). Library Ferret, Caelus API,
 EnchantmentDescriptions, Bookshelf, U Team Core and Cloth Config are libraries: packwiz adds them only if a mod needs
 them.
