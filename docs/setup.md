@@ -31,9 +31,10 @@ before expecting an update. Bootstrap used: packwiz-installer-bootstrap v0.0.3.
 4. Create `start.bat`. If Java 17 is not first on PATH (Ben's PC), add the `set "PATH=..."` line so `run.bat` gets it:
    ```
    @echo off
+   cd /d "%~dp0"
    set "PATH=C:\Program Files\Eclipse Adoptium\jdk-17.0.21.9-hotspot\bin;%PATH%"
    java -jar packwiz-installer-bootstrap.jar -g -s server https://raw.githubusercontent.com/thundertiki/minecraft-pack/main/pack.toml
-   call run.bat nogui
+   call "%~dp0run.bat" nogui
    ```
 5. Run `start.bat` once; it stops at the EULA. Set `eula=true` in `eula.txt`, run it again. Allow Java on private
    networks when Windows asks.
