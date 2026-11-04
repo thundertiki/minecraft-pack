@@ -7,6 +7,8 @@ The pack is `pack.toml` + `index.toml` + `mods/*.pw.toml`. Machines install it w
 The repo is public (2026-11-03), so every machine uses
 `https://raw.githubusercontent.com/thundertiki/minecraft-pack/main/pack.toml`. Only `main` reaches players: merge
 before expecting an update. Bootstrap used: packwiz-installer-bootstrap v0.0.3.
+GitHub caches `main` for a few minutes after a push. To test a commit at once, point packwiz at
+`https://raw.githubusercontent.com/thundertiki/minecraft-pack/<commit sha>/pack.toml`.
 
 ## Prism client (laptop, Ben's PC, Sarah's PC)
 1. Create an instance: Minecraft 1.20.1, Forge 47.4.28. Memory: 4 to 5 GB on the laptop, 8 GB on a PC with 24 GB

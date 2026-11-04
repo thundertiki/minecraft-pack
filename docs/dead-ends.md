@@ -14,3 +14,8 @@
   TFMG's steel and oil chains give the depth instead of KubeJS-locked machine tiers.
 - **`packwiz modrinth add tectonic` picks 2.2.1 (a 1.19.3 multi-loader file):** add it by version id and keep it
   pinned (`packwiz pin tectonic`); unpin only to update by hand.
+- **Checking dependencies with the Modrinth API** (2026-11-03, confirmed): missed Architectury, Cloth Config and
+  Lithostitched, because Artifacts and Tectonic declare them only in their jars. Read each jar's `META-INF/mods.toml`
+  (skill `mc-add-mod` does). Revisit if: never.
+- **Downloading packwiz's CI build on the PC** (2026-11-04, confirmed): auto mode blocked it as outside code, so mods
+  were added by writing `.pw.toml` files (`mc-add-mod`). Revisit if: Ben installs packwiz or allows it.

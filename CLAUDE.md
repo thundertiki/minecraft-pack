@@ -8,8 +8,9 @@ recipe locks.
 
 ## Rules
 - The pack is a packwiz repo: mods are `.pw.toml` files, never jars. Add with `packwiz modrinth add <slug>`, or
-  `packwiz curseforge add` only when a mod is not on Modrinth. Packwiz pulls in required
-  dependencies itself.
+  `packwiz curseforge add` only when a mod is not on Modrinth (no packwiz here: skill `mc-add-mod`). Packwiz pulls in
+  required dependencies itself, except ones a mod declares only inside its jar: after adding mods, start the server
+  once and check for `Missing or unsupported mandatory dependencies` (see `docs/modlist.md`).
 - Every mod must have a build for the chosen Minecraft version and loader before it is added. Check the Modrinth API, never guess.
   Version/loader check: `docs/modlist.md` has the slug and the version found on 2026-11-02.
 - Keep the pack near 100 mods including libraries (laptop RAM). Heavy additions (AE2) are optional tier 2.
@@ -26,4 +27,4 @@ recipe locks.
 - `docs/next.md`: what is in flight. `docs/dead-ends.md`: what failed.
 
 ## Skills
-None yet. Prefix if added: `mc-`.
+Prefix `mc-`. `mc-add-mod`: add Modrinth mods without packwiz (jar dependency check, index, server test).
