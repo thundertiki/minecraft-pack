@@ -20,6 +20,7 @@ recipe locks.
 ## Where things are
 - `docs/design.md`: version choice, laptop/PC profiles, Alex's Mobs, progression.
 - `docs/modlist.md`: every candidate mod, slug, source, verified version, role, risk.
+- `docs/setup.md`: Prism client and PC server install.
 - `docs/next.md`: what is in flight. `docs/dead-ends.md`: what failed.
 
 ## Skills

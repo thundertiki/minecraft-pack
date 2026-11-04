@@ -1,0 +1,13 @@
+name = "Ben and Sarah's Pack"
+author = "Ben and Sarah"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "d25c4a9a365949233021370531684ed13c27430211dcc9c44453dab5919f48b2"
+
+[versions]
+forge = "47.4.28"
+minecraft = "1.20.1"

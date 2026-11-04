@@ -12,3 +12,5 @@
   Ben chose one.
 - **Quests and Above-and-Beyond-style tiers (dropped 2026-11-03):** Ben chose normal Create progression with no quests;
   TFMG's steel and oil chains give the depth instead of KubeJS-locked machine tiers.
+- **`packwiz modrinth add tectonic` picks 2.2.1 (a 1.19.3 multi-loader file):** add it by version id and keep it
+  pinned (`packwiz pin tectonic`); unpin only to update by hand.
