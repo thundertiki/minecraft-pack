@@ -316,6 +316,11 @@ hash = "ea8571ba9dc8e74bad5e4257d50e9bb80d02be8f3d5de7fe3dede969e26fa15c"
 metafile = true
 
 [[files]]
+file = "mods/saints-dragons.pw.toml"
+hash = "a006949b5ec7ef028bf9b2003c62f7c9794883bbeb7a6b6c6667fde00995c3d0"
+metafile = true
+
+[[files]]
 file = "mods/searchables.pw.toml"
 hash = "b8c7497acbf4890b4609b6b20de7affdd3482fc99af975d9ff6b29c075e1d8a7"
 metafile = true

@@ -16,6 +16,7 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 | `alexs-mobs` | 1.22.9 | Core creature mod. About 89 animals; capuchin monkey rides on the shoulder (shift-right-click; crouch to remove). Needs Citadel. If too many animals, trim spawns in its config. |
 | `naturalist` | 2.0.9 | Gentle wildlife (bears, deer, butterflies). Not in the pack (Alex's Mobs already adds many creatures). |
 | `waystones-teleport-pets` | 1.2 | Pets follow Waystones teleports. |
+| `saints-dragons` | 0.9.88 | Added 2026-11-03. Tameable, rideable animated dragons; the only maintained 1.20.1 Forge dragon mod. Needs GeckoLib (already in). Dragons only, so not a second general creature mod. |
 
 ### Create core and add-ons
 | Slug | Found | Notes |
