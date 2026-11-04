@@ -15,16 +15,14 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 |---|---|---|
 | `alexs-mobs` | 1.22.9 | Core creature mod. About 89 animals; capuchin monkey rides on the shoulder (shift-right-click; crouch to remove). Needs Citadel. If too many animals, trim spawns in its config. |
 | `naturalist` | 2.0.9 | Gentle wildlife (bears, deer, butterflies). Not in the pack (Alex's Mobs already adds many creatures). |
-| `dragon-mounts-legacy` | 1.2.3-beta | Sarah's old mod; beta. |
 | `waystones-teleport-pets` | 1.2 | Pets follow Waystones teleports. |
 
 ### Create core and add-ons
 | Slug | Found | Notes |
 |---|---|---|
-| `create` | 6.0.8 | The tech spine: visual, non-linear automation. |
+| `create` | 6.0.8 | The tech spine. Pinned: 6.0.8 is the newest 1.20.1 build, and Central Kitchen needs exactly it. |
 | `createaddition` | 1.3.3 | Electricity and wiring bridge. |
 | `create-steam-n-rails` | 1.7.3 | Trains and steam. |
-| `create-new-age` | 1.2.0 | Power generation. |
 | `create-connected` | 1.2.3 | Quality of life blocks (more gearbox, shaft and belt variants). |
 | `create-deco` | 2.0.3 | Decoration blocks (bars, catwalks). |
 | `create-framed` | 1.7.1 | Glass and framed blocks. |
@@ -75,12 +73,11 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | Slug | Found | Notes |
 |---|---|---|
 | `jei` | 15.74.0 | |
-| `journeymap` | 6.0.7 | |
+| `journeymap` | 6.0.7 | Chosen over Xaero's (Ben, 2026-11-03). |
 | `appleskin` | 2.5.1 | |
 | `jade` | 11.13.3 | |
 | `mouse-tweaks` | 2.25.1 | |
 | `clumps` | 12.0.0.4 | |
-| `swing-through-grass` | 1.1.0 | |
 | `snow-under-trees` | 1.4.12 | |
 | `polymorph` | 0.49.11 | Choose the result when two mods' recipes clash (food mods, Create). Added 2026-11-03. |
 | `just-enough-resources-jer` | 1.4.0.247 | JEI pages for mob drops and ore heights. Added 2026-11-03. |
@@ -93,7 +90,6 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 |---|---|---|
 | `embeddium` | 0.3.31 | Renderer (or `rubidium` 0.7.1). |
 | `oculus` | 1.8.0 | Shader loader; Eclipse needs 1.6.11 or newer. |
-| `canary` | 0.3.3 | Logic optimizations. |
 | `ferrite-core` | 6.0.1 | Memory. |
 | `modernfix` | 5.27.91 | Startup and memory. |
 | `entityculling` | 1.11.3 | Helps with Create contraptions and many animals. |
@@ -107,7 +103,6 @@ Sophisticated Core, Valhelsia Core, YUNG's API.
 ## Tier 2: optional depth (heavier; PC first)
 | Slug | Found | Notes |
 |---|---|---|
-| `create-diesel-generators` | 1.3.12 | Fuel power. |
 | `create-encased` | 1.8-ht2 | More encased machinery. |
 | `create-bits-n-bobs` | 0.0.41 | Extra building/utility blocks. |
 | `ae2` | 15.4.12 | Applied Energistics 2 storage/autocrafting. |
@@ -121,6 +116,10 @@ Dropped in the 2026-11-03 review: `immediatelyfast` (only 1.21.x builds, wrongly
 (crops and trees mods missing on 1.20.1 Forge; Farmer's Delight covers food), `mekanism` (heavy, a second tech chain),
 Goblin Traders and Curious Elytra (no Modrinth project), ExpandAbility (no 1.20.1 build), Valhelsia Tweaks, Useful
 Backpacks (Sophisticated Backpacks instead), Essential (not needed with Prism),
-Adorable Hamster Pets, Animal Garden Owl and Pet Shop (Ben, 2026-11-03: not needed). Library Ferret, Caelus API,
+Adorable Hamster Pets, Animal Garden Owl and Pet Shop (Ben, 2026-11-03: not needed).
+
+Cut in the 2026-11-03 audit: `create-new-age` (third electricity system next to Crafts & Additions and TFMG),
+`canary` (unmaintained since 2024, crash risk), `dragon-mounts-legacy` (unmaintained 2024 beta),
+`swing-through-grass` (little value), `create-diesel-generators` (TFMG engines cover it). Library Ferret, Caelus API,
 EnchantmentDescriptions, Bookshelf, U Team Core and Cloth Config are libraries: packwiz adds them only if a mod needs
 them.

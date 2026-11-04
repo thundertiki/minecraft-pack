@@ -36,11 +36,6 @@ hash = "ff2aa5045d98d0303e288dd37a1613c6376d8cfe2c829219e6e7283fb86008bb"
 metafile = true
 
 [[files]]
-file = "mods/canary.pw.toml"
-hash = "14481081a9e233f4ba57df8a77ce028184818143eae1c73b60749ea482c912e9"
-metafile = true
-
-[[files]]
 file = "mods/chunky.pw.toml"
 hash = "0e17f9758f6f67ef87aa6f8d5afc47901521a05904cd8470ef65063b48e69d73"
 metafile = true
@@ -106,11 +101,6 @@ hash = "0a0533fddd34d04fd6551f5c352081b711662d12f2f2051fe7232a53172edf0e"
 metafile = true
 
 [[files]]
-file = "mods/create-new-age.pw.toml"
-hash = "ecbf9855b5d321b4feb6a5c57d281a0b9b3ba339afb6939d88a68f13a0b3f506"
-metafile = true
-
-[[files]]
 file = "mods/create-ore-excavation.pw.toml"
 hash = "3b5c6966f4b8d7b7b1bb3c5a16a030d824f28e4e138ac5c38166fa4b3ff4cf6d"
 metafile = true
@@ -127,7 +117,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c"
+hash = "2336ffff0e21e8435b4c93887d7b74e2e30d6acdb2353e24010dd2fcd56a188b"
 metafile = true
 
 [[files]]
@@ -138,11 +128,6 @@ metafile = true
 [[files]]
 file = "mods/curios.pw.toml"
 hash = "9eefd607e0d54ec444e798ccdeede1a09a3939440bd1e11c11b84c07a5134be2"
-metafile = true
-
-[[files]]
-file = "mods/dragon-mounts-legacy.pw.toml"
-hash = "03160102e1de0cc704dc461daae4507f12476cade47f5ecb0287c15ddd683222"
 metafile = true
 
 [[files]]
@@ -303,11 +288,6 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
 hash = "a0379de98df819b73d947e6cf93782fbf9a0c15520b7eb971340485c1cbf4684"
-metafile = true
-
-[[files]]
-file = "mods/swing-through-grass.pw.toml"
-hash = "dba7b4050a746b8a8663e6f1038ab128bcdf2c9792721182f7d3496c90fbe540"
 metafile = true
 
 [[files]]
