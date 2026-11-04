@@ -71,6 +71,7 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `yungs-better-ocean-monuments` | 3.0.4 | |
 | `better-village` | 3.3.1 | Sarah's old pick. `ct-overhaul-village` 3.4.14 is the alternative. |
 | `valhelsia-structures` | 1.1.2 | Sarah's old pick; extra structures. |
+| `valhelsia-furniture` | 1.1.3 | Furnishes Valhelsia Structures (it warns without it) and adds craftable furniture. Needs Valhelsia Core 1.1.1+. Added 2026-11-04, before the world was made. |
 | `natures-compass` | 1.12.0 | |
 
 ### Quality of life
