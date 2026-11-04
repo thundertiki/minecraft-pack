@@ -12,7 +12,10 @@ description: Add Modrinth mods to the minecraft-pack packwiz pack on a computer 
    `C:\MinecraftServer\mods` and the Prism instance. `MISSING` = add that dependency too (find its slug), rerun.
 3. **Side:** default `both`; `client` when Modrinth says the server doesn't support it. Override with
    `--side <slug>=client|both`. Never `server`: singleplayer worlds need world-gen mods too. A library a `both` mod
-   needs is `both`, whatever Modrinth says (Lithostitched).
+   needs is `both`, whatever Modrinth says (Lithostitched). A "client-only" mod can still register a network
+   channel (Searchables): if joining fails with "incompatible FML", find `missing on server` in the client's
+   `logs/latest.log` and make that mod `both`. The script skips mods already in the index, so change `side` by hand
+   and update the sha256 hashes in `index.toml` and `pack.toml`.
 4. **Write:** the same command without `--dry`. Check `git diff --stat`: index.toml only gains lines.
 5. **Docs:** one row per mod in `docs/modlist.md` (slug, version, why, date), same commit. Commit, push to `main`.
 6. **Server test** against the exact commit (GitHub caches `main` for a few minutes): a temp copy of `start.bat`
