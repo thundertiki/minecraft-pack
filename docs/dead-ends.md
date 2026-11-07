@@ -22,3 +22,6 @@
 - **Dynamic FPS (dynamic-fps 3.11.4) with Oculus 1.8.0 + Embeddium 0.3.31:** white flashing in game and menus on the PC
   (RTX 2070 SUPER), even with shaders off. Removing Oculus or Dynamic FPS stopped it; removed Dynamic FPS on 2026-11-07
   (not the virtual displays: those were disabled and it continued).
+- **BlueMap 5.12 (`5.12-mc1.20-6-forge`) on the server** (2026-11-07): built for Java 21 (class version 65); the
+  server runs Java 17, so it failed to start. Pinned 5.3 (`5.3-forge-1.20`, Java 17). Revisit if the server moves
+  to Java 21.

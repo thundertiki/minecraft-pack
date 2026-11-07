@@ -101,7 +101,7 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `ore-excavation` | 1.13.170 | Sarah's old pick; vein mining. Keep alongside `create-ore-excavation`. |
 | `controlling` | 12.0.2 | Search box in the controls menu. Client only; needs `searchables` 1.0.3. Added 2026-11-04. Searchables is side `both` since 2026-11-03: it registers a network channel, so a client-only copy blocks joining ("incompatible FML"). |
 | `spark` | 1.10.53 | Lag profiler for the server (`/spark profiler`). Idle unless used. Added 2026-11-04. |
-| `bluemap` | 5.12-mc1.20-6-forge | 3D web map of the server world, over Tailscale (port 8100). Side `server`: it runs only on the PC server, clients never get it. Added 2026-11-07 (JourneyMap's web map only runs inside a client). Setup: `docs/setup.md`. |
+| `bluemap` | 5.3-forge-1.20 | 3D web map of the server world, over Tailscale (port 8100). Side `server`: it runs only on the PC server, clients never get it. Pinned: 5.12 needs Java 21 (server runs 17). Added 2026-11-07 (JourneyMap's web map only runs inside a client). Setup: `docs/setup.md`. |
 
 ### Performance and shaders
 | Slug | Found | Notes |
