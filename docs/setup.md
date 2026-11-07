@@ -42,7 +42,7 @@ GitHub caches `main` for a few minutes after a push. To test a commit at once, p
    networks when Windows asks.
 6. Join from clients at the PC's LAN IP or its Tailscale name (port 25565). Ben's PC: LAN `10.10.1.135`, Tailscale
    `100.112.253.99` or `desktop`.
-7. Pre-generate with Chunky once in the server console: `chunky radius 3000`, then `chunky start`.
+7. No pre-generation (Ben, 2026-11-07): chunks generate as you explore. Chunky stays on the server if that changes.
 
 ## Server settings (only in `C:\MinecraftServer`, not in the pack)
 - Ops: Ben is `Thunder_Tiki` (not `thundertiki`, a different account), Sarah is `s0ulta`. Op from the server

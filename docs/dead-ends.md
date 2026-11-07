@@ -17,11 +17,15 @@
 - **Checking dependencies with the Modrinth API** (2026-11-03, confirmed): missed Architectury, Cloth Config and
   Lithostitched, because Artifacts and Tectonic declare them only in their jars. Read each jar's `META-INF/mods.toml`
   (skill `mc-add-mod` does). Revisit if: never.
-- **Downloading packwiz's CI build on the PC** (2026-11-04, confirmed): auto mode blocked it as outside code, so mods
-  were added by writing `.pw.toml` files (`mc-add-mod`). Revisit if: Ben installs packwiz or allows it.
+- **Running downloaded tool jars** (packwiz CI build 2026-11-04, BlueMap CLI 2026-11-07; confirmed): auto mode blocks
+  them as outside code. Mods are added by writing `.pw.toml` files (`mc-add-mod`). Ben allowed the BlueMap CLI on
+  2026-11-07, so packwiz may work if he allows it too. Revisit if: Ben installs packwiz or allows it.
 - **Dynamic FPS (dynamic-fps 3.11.4) with Oculus 1.8.0 + Embeddium 0.3.31:** white flashing in game and menus on the PC
   (RTX 2070 SUPER), even with shaders off. Removing Oculus or Dynamic FPS stopped it; removed Dynamic FPS on 2026-11-07
   (not the virtual displays: those were disabled and it continued).
 - **BlueMap 5.12 (`5.12-mc1.20-6-forge`) on the server** (2026-11-07): built for Java 21 (class version 65); the
   server runs Java 17, so it failed to start. Pinned 5.3 (`5.3-forge-1.20`, Java 17). Revisit if the server moves
   to Java 21.
+- **BlueMap CLI 5.29 for timelapse renders** (2026-11-07, confirmed): built for Java 25 (class version 69); this PC
+  has 17 and 21. Using CLI 5.3 on Java 17. CLI 5.16 (last Java 21 build) would add flat-only maps and render masks.
+  Revisit if: Java 25 is installed just for the CLI.

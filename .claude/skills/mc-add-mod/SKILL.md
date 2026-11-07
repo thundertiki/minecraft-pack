@@ -15,8 +15,9 @@ description: Add Modrinth mods to the minecraft-pack packwiz pack on a computer 
    singleplayer worlds need them too. Check the jar's Java version (class major 61 = Java 17): the server runs 17. A library a `both` mod
    needs is `both`, whatever Modrinth says (Lithostitched). A "client-only" mod can still register a network
    channel (Searchables): if joining fails with "incompatible FML", find `missing on server` in the client's
-   `logs/latest.log` and make that mod `both`. The script skips mods already in the index, so change `side` by hand
-   and update the sha256 hashes in `index.toml` and `pack.toml`.
+   `logs/latest.log` and make that mod `both`. For a mod already in the pack use
+   `--set-side <slug>=client|both|server` (rewrites the hashes). **Removing:** `--remove <slug>` deletes the
+   `.pw.toml` and index entry; check first that no other mod needs it, and that blocks it placed will vanish.
 4. **Write:** the same command without `--dry`. Check `git diff --stat`: index.toml only gains lines.
 5. **Docs:** one row per mod in `docs/modlist.md` (slug, version, why, date), same commit. Commit, push to `main`.
 6. **Server test** against the exact commit (GitHub caches `main` for a few minutes): a temp copy of `start.bat`

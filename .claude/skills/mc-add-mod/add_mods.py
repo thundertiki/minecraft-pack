@@ -1,9 +1,11 @@
 """Add Modrinth mods to the packwiz pack without packwiz.
 
 Usage: python -I add_mods.py <repo> <slug>[@<version_id>] ... [--side slug=client|both] [--jars <dir>] [--dry]
+       python -I add_mods.py <repo> [--remove <slug>] ... [--set-side <slug>=client|both|server] ...
 Picks the newest Forge 1.20.1 release (or the given version id), reads META-INF/mods.toml from the jar, stops if a
 mandatory dependency is missing from the pack, then writes mods/<slug>.pw.toml, adds a sorted index entry and
-updates the index hash in pack.toml. Never writes side = "server": singleplayer worlds need server mods too.
+updates the index hash in pack.toml. New mods are never side = "server" (singleplayer worlds need them too);
+--set-side can make an existing server-only tool `server`.
 """
 import glob, hashlib, io, json, os, re, sys, tempfile, urllib.parse, urllib.request, zipfile
 
@@ -57,7 +59,18 @@ def main():
         i = args.index('--side'); k, v = args[i + 1].split('='); sides[k] = v; del args[i:i + 2]
     while '--jars' in args:  # extra jar folder, e.g. a test server already on a branch's mods
         i = args.index('--jars'); JAR_DIRS.append(args[i + 1]); del args[i:i + 2]
+    removes, set_sides = [], {}
+    while '--remove' in args:
+        i = args.index('--remove'); removes.append(args[i + 1]); del args[i:i + 2]
+    while '--set-side' in args:
+        i = args.index('--set-side'); k, v = args[i + 1].split('='); set_sides[k] = v; del args[i:i + 2]
     args = [a for a in args if a != '--dry']
+    if removes or set_sides:
+        if dry:
+            sys.exit('--remove and --set-side have no dry run; check git diff afterwards')
+        edit_existing(args[0], removes, set_sides)
+        if len(args) == 1:
+            return
     repo, specs = args[0], args[1:]
     have = set()
     for d in JAR_DIRS:
@@ -101,10 +114,7 @@ def main():
         sys.exit('Stopped: add the missing dependencies first (find their Modrinth slugs).')
     if dry:
         return
-    ip = os.path.join(repo, 'index.toml')
-    idx = open(ip, encoding='utf-8', newline='').read()
-    head, _, rest = idx.partition('[[files]]')
-    blocks = ['[[files]]' + b.rstrip('\n') + '\n' for b in ('[[files]]' + rest).split('[[files]]')[1:]] if rest else []
+    head, blocks = read_index(repo)
     for n in new:
         f = n['f']
         body = (f'name = "{n["title"]}"\nfilename = "{f["filename"]}"\nside = "{n["side"]}"\n\n[download]\n'
@@ -115,9 +125,21 @@ def main():
             sys.exit(f'{fn} is already in index.toml')
         open(os.path.join(repo, fn), 'w', encoding='utf-8', newline='').write(body)
         blocks.append(f'[[files]]\nfile = "{fn}"\nhash = "{hashlib.sha256(body.encode()).hexdigest()}"\nmetafile = true\n')
+    write_index(repo, head, blocks)
+    print(f'Wrote {len(new)} mod files; index has {len(blocks)} entries.')
+
+
+def read_index(repo):
+    idx = open(os.path.join(repo, 'index.toml'), encoding='utf-8', newline='').read()
+    head, _, rest = idx.partition('[[files]]')
+    return head, (['[[files]]' + b.rstrip('\n') + '\n' for b in ('[[files]]' + rest).split('[[files]]')[1:]] if rest else [])
+
+
+def write_index(repo, head, blocks):
+    """Sort the index, write it, and update its sha256 in pack.toml."""
     blocks.sort(key=lambda b: re.search(r'file = "([^"]+)"', b).group(1))
     idx = head.rstrip('\n') + '\n\n' + '\n'.join(blocks)
-    open(ip, 'w', encoding='utf-8', newline='').write(idx)
+    open(os.path.join(repo, 'index.toml'), 'w', encoding='utf-8', newline='').write(idx)
     pk = os.path.join(repo, 'pack.toml')
     t = open(pk, encoding='utf-8', newline='').read()
     t2 = re.sub(r'(\[index\][^\[]*?hash = ")[0-9a-f]+', lambda m: m.group(1) + hashlib.sha256(idx.encode()).hexdigest(),
@@ -125,7 +147,32 @@ def main():
     if t2 == t:
         sys.exit('pack.toml index hash not updated: check its [index] block')
     open(pk, 'w', encoding='utf-8', newline='').write(t2)
-    print(f'Wrote {len(new)} mod files; index has {len(blocks)} entries.')
+
+
+def edit_existing(repo, removes, set_sides):
+    """--remove <slug>: delete the mod's .pw.toml and index entry. --set-side <slug>=client|both|server: change an
+    existing mod's side and its index hash. Libraries it needed are not removed: check needed-by first."""
+    head, blocks = read_index(repo)
+    for slug in removes:
+        fn = f'mods/{slug}.pw.toml'
+        keep = [b for b in blocks if f'file = "{fn}"' not in b]
+        if len(keep) == len(blocks):
+            sys.exit(f'{fn} is not in index.toml')
+        blocks = keep
+        os.remove(os.path.join(repo, fn))
+        print(f'removed {slug}')
+    for slug, side in set_sides.items():
+        if side not in ('client', 'both', 'server'):
+            sys.exit(f'{slug}: side must be client, both or server')
+        fn = f'mods/{slug}.pw.toml'
+        p = os.path.join(repo, fn)
+        t = open(p, encoding='utf-8', newline='').read()
+        t = re.sub(r'^side = "\w+"', f'side = "{side}"', t, count=1, flags=re.M)
+        open(p, 'w', encoding='utf-8', newline='').write(t)
+        h = hashlib.sha256(t.encode()).hexdigest()
+        blocks = [re.sub(r'hash = "[0-9a-f]+"', f'hash = "{h}"', b) if f'file = "{fn}"' in b else b for b in blocks]
+        print(f'{slug}: side = {side}')
+    write_index(repo, head, blocks)
 
 
 if __name__ == '__main__':
