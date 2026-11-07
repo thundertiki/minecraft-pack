@@ -49,7 +49,27 @@ GitHub caches `main` for a few minutes after a push. To test a commit at once, p
   window: `op <name>`.
 - `server.properties`: `allow-flight=true` (jetpacks and dragons).
 - `config/simplebackups-common.toml`: `timer = 30`, `backupsToKeep = 40`. Backups go to `simplebackups/`,
-  which Google Drive for desktop copies off the PC (Ben, 2026-11-07).
+  which Google Drive for desktop copies off the PC (Ben, 2026-11-07). Drive mirrors deletions, so that copy only
+  holds the newest 40; the full archive is `G:\My Drive\Minecraft\world-backups` (below).
+
+## Services on the PC (move every one when switching computers)
+Checklist for a new server computer; each line says where it lives and how to recreate it.
+1. **Java:** Temurin 17 (`winget install EclipseAdoptium.Temurin.17.JDK`); Forge 1.20.1 needs 17, don't upgrade.
+2. **Minecraft server:** `C:\MinecraftServer` (Forge 47.4.28, `start.bat`, `user_jvm_args.txt` `-Xmx4G`, ops,
+   `server.properties`, `eula.txt`): steps under PC server. Move the `world` folder (or restore the newest backup).
+3. **Firewall:** inbound rule "Minecraft Server 25565" (TCP, Private) and Windows' allow rule for Temurin's
+   `java.exe` (Windows asks on first start).
+4. **Tailscale:** the server and web map are reached at the PC's Tailscale IP `100.112.253.99`. A new PC gets a new
+   IP: update `config/bluemap/webserver.conf` `ip:` and this file.
+5. **BlueMap web map:** server mod plus `config/bluemap/` (section above).
+6. **Backups:** Simple Backups (in the pack) writes `C:\MinecraftServer\simplebackups`; Google Drive for desktop
+   backs that folder up; scheduled task **"Minecraft backup archive"** (hourly, current user) copies every zip to
+   `G:\My Drive\Minecraft\world-backups` and never deletes. Recreate it with
+   `tools/backup-archive/install-task.ps1`; log `C:\MinecraftServer\logs\archive-backups.log`.
+7. **Timelapse renders (not scheduled):** `C:\MinecraftServer\timelapse\` (BlueMap 5.3 CLI, config, frames) and
+   the venv `C:\Users\Benjamen\venvs\mc-timelapse` (Pillow). See `docs/timelapse.md`.
+8. **Clients:** Prism instance `BenAndSarah-1.20.1` with the packwiz pre-launch command (Prism client section).
+9. **Test copy:** `C:\MinecraftServer-test` (worldgen test of 2026-11-07, ports 25566/8101) can be deleted.
 
 ## Web map (BlueMap, server only)
 - Open `http://100.112.253.99:8100` (or `http://desktop:8100`) on any Tailscale device while the server runs.
