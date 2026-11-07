@@ -36,6 +36,11 @@ hash = "0484b975d66fd7f59e0533191ff46fbb1a44df12263591ce3dadbb3b87f3d527"
 metafile = true
 
 [[files]]
+file = "mods/bluemap.pw.toml"
+hash = "55ab212ba17d188a2f95b65d4cf63bbc98c664aa74986b57d288d12e62bac780"
+metafile = true
+
+[[files]]
 file = "mods/botania.pw.toml"
 hash = "ff2aa5045d98d0303e288dd37a1613c6376d8cfe2c829219e6e7283fb86008bb"
 metafile = true
