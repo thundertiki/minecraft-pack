@@ -52,6 +52,8 @@ GitHub caches `main` for a few minutes after a push. To test a commit at once, p
 
 ## Troubleshooting
 - Red flashes in menus and black flashes in game: the Sunshine/Apollo virtual display. Close it while playing.
+- White flashes in game and menus (even with shaders off): Dynamic FPS with Oculus. Removed 2026-11-07; see
+  `dead-ends.md`.
 
 ## Shaders
 Never in the pack. Download the zip (PC: Photon v1.4 from modrinth.com/shader/photon-shader; Modrinth lists
