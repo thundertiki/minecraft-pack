@@ -33,7 +33,6 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 | `create-ore-excavation` | 1.6.6 | Drills for ore veins. Keep alongside `ore-excavation` (different job). |
 | `create-confectionery` | 1.1.3 | Sweets and baking. Cozy. |
 | `create-tfmg` | 1.0.2f | The Factory Must Grow: steel, oil, diesel engines. Moved from Tier 2 (Ben, 2026-11-03); the tech depth. |
-| `create-tweaked-controllers` | 1.2.7 | Gamepad control for contraptions. Optional. |
 | `bellsandwhistles` | 0.4.5 | Create visual add-ons. Optional. |
 | `create-repair` | 1.3.0 | Unofficial Create 1.20.1 patch: backported bug and dupe fixes; restores Create's train map in JourneyMap 6 (JourneyMap asks for it). Added 2026-11-04. |
 | `mixinbooster` | 0.1.3+1.20.1 | Lets Create Repair apply its Fabric-mixin fixes on Forge (recommended by Create Repair). Added 2026-11-04. |
@@ -125,6 +124,7 @@ After adding a mod, start the server once and check the log for `Missing or unsu
 ## Tier 2: optional depth (heavier; PC first)
 | Slug | Found | Notes |
 |---|---|---|
+| `create-tweaked-controllers` | 1.2.7 | Gamepad control for contraptions. Not in the pack (moved from Tier 1, 2026-11-07). |
 | `create-encased` | 1.8-ht2 | More encased machinery. |
 | `create-bits-n-bobs` | 0.0.41 | Extra building/utility blocks. |
 | `ae2` | 15.4.12 | Applied Energistics 2 storage/autocrafting. |
