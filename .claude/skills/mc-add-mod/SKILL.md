@@ -11,7 +11,8 @@ description: Add Modrinth mods to the minecraft-pack packwiz pack on a computer 
    It reads each jar's `META-INF/mods.toml` (Modrinth's dependency list misses some) and compares against jars in
    `C:\MinecraftServer\mods` and the Prism instance. `MISSING` = add that dependency too (find its slug), rerun.
 3. **Side:** default `both`; `client` when Modrinth says the server doesn't support it. Override with
-   `--side <slug>=client|both`. Never `server`: singleplayer worlds need world-gen mods too. A library a `both` mod
+   `--side <slug>=client|both`. `server` only for server tools nothing in a world depends on (BlueMap); never for content or world-gen mods, since
+   singleplayer worlds need them too. Check the jar's Java version (class major 61 = Java 17): the server runs 17. A library a `both` mod
    needs is `both`, whatever Modrinth says (Lithostitched). A "client-only" mod can still register a network
    channel (Searchables): if joining fails with "incompatible FML", find `missing on server` in the client's
    `logs/latest.log` and make that mod `both`. The script skips mods already in the index, so change `side` by hand
