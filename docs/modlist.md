@@ -17,6 +17,7 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 | `naturalist` | 2.0.9 | Gentle wildlife (bears, deer, butterflies). Not in the pack (Alex's Mobs already adds many creatures). |
 | `waystones-teleport-pets` | 1.2 | Pets follow Waystones teleports. |
 | `saints-dragons` | 0.9.88 | Added 2026-11-03. Tameable, rideable animated dragons; the only maintained 1.20.1 Forge dragon mod. Needs GeckoLib (already in). Dragons only, so not a second general creature mod. |
+| `alexs-caves` | 2.0.2 | Six rare cave biomes with their own mobs and blocks, by the Alex's Mobs author (Citadel already in). Big (71 MB). Worldgen: underground, new chunks only. Added 2026-11-07 (plan from the Mod Map). |
 
 ### Create core and add-ons
 | Slug | Found | Notes |
@@ -37,6 +38,9 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 | `create-repair` | 1.3.0 | Unofficial Create 1.20.1 patch: backported bug and dupe fixes; restores Create's train map in JourneyMap 6 (JourneyMap asks for it). Added 2026-11-04. |
 | `mixinbooster` | 0.1.3+1.20.1 | Lets Create Repair apply its Fabric-mixin fixes on Forge (recommended by Create Repair). Added 2026-11-04. |
 | `copycats` | 3.0.10 | Copycats+: copycat blocks in every shape. Added 2026-11-04. |
+| `create-garnished` | 2.1.7.c | Nuts and foods made with Create. Worldgen: nut trees in Plains, plants in the Nether, End and some overworld biomes (new chunks only). Added 2026-11-07 (plan from the Mod Map). |
+| `create-power-loader` | 2.0.3 | Chunk loaders for trains and contraptions. Added 2026-11-07 (plan from the Mod Map). |
+| `create-goggles` | 6.1.1 | Engineer's goggles built into helmets. Added 2026-11-07 (plan from the Mod Map). |
 Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddition` (above); `create-hypertube`,
 `create-interactive` returned no project. (Slice & Dice is `slice-and-dice`, not `create-slice-and-dice`.)
 
@@ -59,6 +63,9 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `pams-harvestcraft-2-crops` | 1.0.3 | Pam's garden crops. CurseForge only (no 1.20.1 build on Modrinth). |
 | `pams-harvestcraft-2-trees` | 1.0.2 | Pam's fruit and nut trees. CurseForge only. |
 | `simple-backups` | 3.1.24 | Automatic world backups (Create contraptions and a beta dragon mod can corrupt a world). |
+| `farmers-respite` | 2.1 | Tea and coffee for Farmer's Delight. Added 2026-11-07 (plan from the Mod Map). |
+| `botany-pots` | 13.0.43 | Grow crops and trees in pots; needs `bookshelf-lib` 20.2.15. Added 2026-11-07 (plan from the Mod Map). |
+| `supplementaries` | 3.1.44 | Decorative and handy blocks (jars, signposts, flags); needs `moonlight` 2.16.39. Some worldgen (wild flax, road signs; new chunks only). Added 2026-11-07 (plan from the Mod Map). |
 
 ### World and structures
 | Slug | Found | Notes |
@@ -98,7 +105,9 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `inventory-profiles-next` | 1.10.20 | Inventory sorting; pulls in Kotlin for Forge and libIPN. Added 2026-11-03. |
 | `ore-excavation` | 1.13.170 | Sarah's old pick; vein mining. Keep alongside `create-ore-excavation`. |
 | `controlling` | 12.0.2 | Search box in the controls menu. Client only; needs `searchables` 1.0.3. Added 2026-11-04. Searchables is side `both` since 2026-11-03: it registers a network channel, so a client-only copy blocks joining ("incompatible FML"). |
-| `spark` | 1.10.53 | Lag profiler for the server (`/spark profiler`). Idle unless used. Added 2026-11-04. |
+| `spark` | 1.10.53 | Side `server` since 2026-11-07. Lag profiler for the server (`/spark profiler`). Idle unless used. Added 2026-11-04. |
+| `storagedrawers` | 12.15.1 | Drawer storage. Added 2026-11-07 (plan from the Mod Map). |
+| `trashslot` | 15.1.5 | Trash slot in the inventory. Added 2026-11-07 (plan from the Mod Map). |
 | `bluemap` | 5.3-forge-1.20 | 3D web map of the server world, over Tailscale (port 8100). Side `server`: it runs only on the PC server, clients never get it. Pinned: 5.12 needs Java 21 (server runs 17). Added 2026-11-07 (JourneyMap's web map only runs inside a client). Setup: `docs/setup.md`. |
 
 ### Performance and shaders
@@ -109,7 +118,8 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `ferrite-core` | 6.0.1 | Memory. |
 | `modernfix` | 5.27.91 | Startup and memory. |
 | `entityculling` | 1.11.3 | Helps with Create contraptions and many animals. |
-| `chunky` | 1.3.146 | Pre-generate the world on the PC server (Terralith + Tectonic chunks are slow to generate). Optional. |
+| `memoryleakfix` | 1.1.5 | Fixes memory leaks. Add-on to watch after the Dynamic FPS flash. Added 2026-11-07 (plan from the Mod Map). |
+| `chunky` | 1.3.146 | Side `server` since 2026-11-07. Pre-generate the world on the PC server (Terralith + Tectonic chunks are slow to generate). Optional. |
 
 Libraries packwiz added (not listed above): Balm, Citadel, Common Networking, Create Dragons Plus (required by Create
 Enchantment Industry), GeckoLib, Kotlin for Forge, libIPN, Library Ferret, Mezz Config, Patchouli, SmartBrainLib,
@@ -120,7 +130,9 @@ the PC server's Forge log listed them): Architectury API 9.2.14 and Cloth Config
 1.4.11 (Tectonic). Side set to `both` (Modrinth marks Lithostitched server-only, but Tectonic needs it on clients).
 After adding a mod, start the server once and check the log for `Missing or unsupported mandatory dependencies`.
 
-## Tier 2: optional depth (heavier; PC first)
+## Tier 2: optional depth (heavier)
+All four moved into the pack on 2026-11-07 (AE2 with `guideme` 20.1.15). AE2 worldgen: meteorites and quartz, new
+chunks only.
 | Slug | Found | Notes |
 |---|---|---|
 | `create-tweaked-controllers` | 1.2.7 | Gamepad control for contraptions. Not in the pack (moved from Tier 1, 2026-11-07). |
@@ -145,3 +157,4 @@ them.
 
 Removed 2026-11-07: `slice-and-dice` (Central Kitchen already turns cutting board recipes into Create sawing and
 deploying; any placed Slicers are lost). Kotlin for Forge stays: Create Jetpack and Inventory Profiles Next use it.
+Not added 2026-11-07: `noisium` (rewrites part of the chunk generator; small gain, risk to the current world).

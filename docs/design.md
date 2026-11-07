@@ -8,6 +8,7 @@
 
 ## Decisions
 - **Focus: Create + Alex's Mobs (Ben, 2026-11-03).** One creature mod only, so no Cobblemon. This fixes the version.
+  A guideline, not a hard rule (Ben, 2026-11-07): Alex's Caves (same author) added; mod count may pass 100.
 - **Minecraft 1.20.1, Forge.** Official Alex's Mobs (1.22.9) and the largest Create add-on pool live here, and most of
   Sarah's old list still exists. Shaders: Embeddium + Oculus 1.8.0 (Eclipse needs Iris or Oculus 1.6.11 or newer).
   Trade-off: no 1.21 vanilla content (trial chambers, mace, Crafter); unofficial backports exist.

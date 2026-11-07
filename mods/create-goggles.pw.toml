@@ -1,0 +1,13 @@
+name = "Create Goggles"
+filename = "creategoggles-1.20.1-6.1.1-[FORGE].jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/L1RT5SJc/versions/Nc2Ag5HT/creategoggles-1.20.1-6.1.1-%5BFORGE%5D.jar"
+hash-format = "sha512"
+hash = "29d509b747c502704e8a3c43dba921a3499d4eb6500d57d06f70a8da2e1e12804dafce4da5c2ce297f37f1d62d6900cb3b6dbec52b651b88420755ae9c76c848"
+
+[update]
+[update.modrinth]
+mod-id = "L1RT5SJc"
+version = "Nc2Ag5HT"
