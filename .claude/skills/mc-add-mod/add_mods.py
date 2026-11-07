@@ -1,6 +1,6 @@
 """Add Modrinth mods to the packwiz pack without packwiz.
 
-Usage: python -I add_mods.py <repo> <slug>[@<version_id>] ... [--side slug=client|both] [--dry]
+Usage: python -I add_mods.py <repo> <slug>[@<version_id>] ... [--side slug=client|both] [--jars <dir>] [--dry]
 Picks the newest Forge 1.20.1 release (or the given version id), reads META-INF/mods.toml from the jar, stops if a
 mandatory dependency is missing from the pack, then writes mods/<slug>.pw.toml, adds a sorted index entry and
 updates the index hash in pack.toml. Never writes side = "server": singleplayer worlds need server mods too.
@@ -55,6 +55,8 @@ def main():
     sides = {}
     while '--side' in args:
         i = args.index('--side'); k, v = args[i + 1].split('='); sides[k] = v; del args[i:i + 2]
+    while '--jars' in args:  # extra jar folder, e.g. a test server already on a branch's mods
+        i = args.index('--jars'); JAR_DIRS.append(args[i + 1]); del args[i:i + 2]
     args = [a for a in args if a != '--dry']
     repo, specs = args[0], args[1:]
     have = set()

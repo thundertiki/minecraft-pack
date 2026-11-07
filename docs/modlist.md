@@ -16,6 +16,7 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 | `alexs-mobs` | 1.22.9 | Core creature mod. About 89 animals; capuchin monkey rides on the shoulder (shift-right-click; crouch to remove). Needs Citadel. If too many animals, trim spawns in its config. |
 | `naturalist` | 2.0.9 | Gentle wildlife (bears, deer, butterflies). Not in the pack (Alex's Mobs already adds many creatures). |
 | `waystones-teleport-pets` | 1.2 | Pets follow Waystones teleports. |
+| `domestication-innovation` | 1.7.1 | Pet beds, pet enchantments and commands for tamed animals, including Alex's Mobs (same author; Citadel already in). Last updated 2023. No worldgen. Added 2026-11-07. |
 | `saints-dragons` | 0.9.88 | Added 2026-11-03. Tameable, rideable animated dragons; the only maintained 1.20.1 Forge dragon mod. Needs GeckoLib (already in). Dragons only, so not a second general creature mod. |
 | `alexs-caves` | 2.0.2 | Six rare cave biomes with their own mobs and blocks, by the Alex's Mobs author (Citadel already in). Big (71 MB). Worldgen: underground, new chunks only. Added 2026-11-07 (plan from the Mod Map). |
 
@@ -40,6 +41,7 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 | `copycats` | 3.0.10 | Copycats+: copycat blocks in every shape. Added 2026-11-04. |
 | `create-garnished` | 2.1.7.c | Nuts and foods made with Create. Worldgen: nut trees in Plains, plants in the Nether, End and some overworld biomes (new chunks only). Added 2026-11-07 (plan from the Mod Map). |
 | `create-power-loader` | 2.0.3 | Chunk loaders for trains and contraptions. Added 2026-11-07 (plan from the Mod Map). |
+| `create-applied-kinetics` | 1.5.1 | Links AE2 autocrafting to Create machines. Needs AE2 (in pack). No worldgen. Added 2026-11-07. |
 | `create-goggles` | 6.1.1 | Engineer's goggles built into helmets. Added 2026-11-07 (plan from the Mod Map). |
 Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddition` (above); `create-hypertube`,
 `create-interactive` returned no project. (Slice & Dice is `slice-and-dice`, not `create-slice-and-dice`.)
