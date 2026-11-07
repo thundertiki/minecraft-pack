@@ -50,6 +50,16 @@ GitHub caches `main` for a few minutes after a push. To test a commit at once, p
 - `server.properties`: `allow-flight=true` (jetpacks and dragons).
 - `config/simplebackups-common.toml`: `timer = 30`, `backupsToKeep = 40`. Backups go to `simplebackups/`.
 
+## Web map (BlueMap, server only)
+- Open `http://100.112.253.99:8100` (or `http://desktop:8100`) on any Tailscale device while the server runs.
+  JourneyMap's own web map only runs inside a game client, so it is not used.
+- `config/bluemap/webserver.conf`: `ip: "100.112.253.99"`, so it listens only on Tailscale (not the LAN). No
+  firewall rule needed: Windows already allows Temurin 17's `java.exe` inbound.
+- `config/bluemap/core.conf`: `accept-download: true` (BlueMap downloads Minecraft's client jar under Mojang's EULA
+  for textures), `render-thread-count: 2` (the PC also runs HA and Jellyfin).
+- Commands in the server console: `bluemap` (status), `bluemap reload`, `bluemap freeze world` to pause rendering.
+  Modded blocks without a standard model show plain or missing.
+
 ## Troubleshooting
 - Red flashes in menus and black flashes in game: the Sunshine/Apollo virtual display. Close it while playing.
 - White flashes in game and menus (even with shaders off): Dynamic FPS with Oculus. Removed 2026-11-07; see
