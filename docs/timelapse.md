@@ -11,7 +11,7 @@ stitched into a top-down PNG, 1 pixel per block, 3000 x 3000 around 0,0 (`--radi
 - Video: `ffmpeg -framerate 8 -pattern_type glob -i "frames/*.png" -vf "scale=1080:-2" -pix_fmt yuv420p timelapse.mp4`
   run in `C:\MinecraftServer\timelapse` (the glob pattern needs ffmpeg's glob support; else list the files).
 
-## Long-term plan
-- Frames are the archive: rendering the newest backup once a day keeps a frame per day without keeping old zips.
-- Keep one zip a month in `timelapse/archive/` for re-rendering later with a different area or a 3D view.
-- Watch disk use after pre-generating: a world 3000 blocks wide is a few GB, and Simple Backups keeps 40 full zips.
+## Long-term plan (later; not set up)
+- The archive is every backup zip in Google Drive (Ben, 2026-11-07), not the frames. Frames get rendered from it.
+- Simple Backups keeps only 40 zips locally and Drive mirrors deletions, so old zips need copying somewhere it
+  doesn't prune before relying on Drive as the archive.
