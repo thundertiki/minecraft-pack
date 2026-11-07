@@ -48,7 +48,8 @@ GitHub caches `main` for a few minutes after a push. To test a commit at once, p
 - Ops: Ben is `Thunder_Tiki` (not `thundertiki`, a different account), Sarah is `s0ulta`. Op from the server
   window: `op <name>`.
 - `server.properties`: `allow-flight=true` (jetpacks and dragons).
-- `config/simplebackups-common.toml`: `timer = 30`, `backupsToKeep = 40`. Backups go to `simplebackups/`.
+- `config/simplebackups-common.toml`: `timer = 30`, `backupsToKeep = 40`. Backups go to `simplebackups/`,
+  which Google Drive for desktop copies off the PC (Ben, 2026-11-07).
 
 ## Web map (BlueMap, server only)
 - Open `http://100.112.253.99:8100` (or `http://desktop:8100`) on any Tailscale device while the server runs.

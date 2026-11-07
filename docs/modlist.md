@@ -37,7 +37,6 @@ Flywheel and so on) automatically; they are not listed. Counts are mods before l
 | `create-repair` | 1.3.0 | Unofficial Create 1.20.1 patch: backported bug and dupe fixes; restores Create's train map in JourneyMap 6 (JourneyMap asks for it). Added 2026-11-04. |
 | `mixinbooster` | 0.1.3+1.20.1 | Lets Create Repair apply its Fabric-mixin fixes on Forge (recommended by Create Repair). Added 2026-11-04. |
 | `copycats` | 3.0.10 | Copycats+: copycat blocks in every shape. Added 2026-11-04. |
-| `slice-and-dice` | 3.6.0 | Create automation for Farmer's Delight cutting and cooking. Added 2026-11-04. |
 Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddition` (above); `create-hypertube`,
 `create-interactive` returned no project. (Slice & Dice is `slice-and-dice`, not `create-slice-and-dice`.)
 
@@ -143,3 +142,6 @@ Cut in the 2026-11-03 audit: `create-new-age` (third electricity system next to 
 `swing-through-grass` (little value), `create-diesel-generators` (TFMG engines cover it). Library Ferret, Caelus API,
 EnchantmentDescriptions, Bookshelf, U Team Core and Cloth Config are libraries: packwiz adds them only if a mod needs
 them.
+
+Removed 2026-11-07: `slice-and-dice` (Central Kitchen already turns cutting board recipes into Create sawing and
+deploying; any placed Slicers are lost). Kotlin for Forge stays: Create Jetpack and Inventory Profiles Next use it.
