@@ -111,7 +111,6 @@ Not on Modrinth under the slugs tried: Create Crafts & Additions is `createaddit
 | `modernfix` | 5.27.91 | Startup and memory. |
 | `entityculling` | 1.11.3 | Helps with Create contraptions and many animals. |
 | `chunky` | 1.3.146 | Pre-generate the world on the PC server (Terralith + Tectonic chunks are slow to generate). Optional. |
-| `dynamic-fps` | 3.11.4 | Optional for the laptop. |
 
 Libraries packwiz added (not listed above): Balm, Citadel, Common Networking, Create Dragons Plus (required by Create
 Enchantment Industry), GeckoLib, Kotlin for Forge, libIPN, Library Ferret, Mezz Config, Patchouli, SmartBrainLib,

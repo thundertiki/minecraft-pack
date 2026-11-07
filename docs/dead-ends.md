@@ -19,3 +19,6 @@
   (skill `mc-add-mod` does). Revisit if: never.
 - **Downloading packwiz's CI build on the PC** (2026-11-04, confirmed): auto mode blocked it as outside code, so mods
   were added by writing `.pw.toml` files (`mc-add-mod`). Revisit if: Ben installs packwiz or allows it.
+- **Dynamic FPS (dynamic-fps 3.11.4) with Oculus 1.8.0 + Embeddium 0.3.31:** white flashing in game and menus on the PC
+  (RTX 2070 SUPER), even with shaders off. Removing Oculus or Dynamic FPS stopped it; removed Dynamic FPS on 2026-11-07
+  (not the virtual displays: those were disabled and it continued).
