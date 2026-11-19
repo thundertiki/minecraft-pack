@@ -63,9 +63,10 @@ Checklist for a new server computer; each line says where it lives and how to re
    IP: update `config/bluemap/webserver.conf` `ip:` and this file.
 5. **BlueMap web map:** server mod plus `config/bluemap/` (section above).
 6. **Backups:** Simple Backups (in the pack) writes `C:\MinecraftServer\simplebackups`; Google Drive for desktop
-   backs that folder up; scheduled task **"Minecraft backup archive"** (hourly, current user) copies every zip to
-   `G:\My Drive\Minecraft\world-backups` and never deletes. Recreate it with
-   `tools/backup-archive/install-task.ps1`; log `C:\MinecraftServer\logs\archive-backups.log`.
+   backs that folder up. The scheduled task **"Minecraft backup archive"** (hourly copy of every zip to
+   `G:\My Drive\Minecraft\world-backups`) was **deleted 2026-11-18** (Ben didn't want it; it also flashed a
+   console window each hour). Nothing archives the zips now. `tools/backup-archive/` is still in the repo if it's
+   ever wanted again (its `powershell.exe` action needs a hidden launcher to avoid the flash).
 7. **Timelapse renders (not scheduled):** `C:\MinecraftServer\timelapse\` (BlueMap 5.3 CLI, config, frames) and
    the venv `C:\Users\Benjamen\venvs\mc-timelapse` (Pillow). See `docs/timelapse.md`.
 8. **Clients:** Prism instance `BenAndSarah-1.20.1` with the packwiz pre-launch command (Prism client section).
